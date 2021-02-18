@@ -130,6 +130,31 @@
 				}
 			],
 			"sid": 226293593908251
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "spr_jumpy",
+					"sid": 288152897595542,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Jump",
+					"sid": 194254900311467,
+					"parameters": {
+						"audio-file": "381689__stumpbutt__retro-jump-sfx",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 500378367602808
 		}
 	],
 	"sid": 283391499526417

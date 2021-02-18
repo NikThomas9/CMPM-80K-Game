@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -55,7 +63,8 @@
 			"jumpy",
 			"TiledBackground2",
 			"spr_jumpy",
-			"Keyboard"
+			"Keyboard",
+			"Jump"
 		],
 		"subfolders": []
 	},
@@ -83,7 +92,13 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "381689__stumpbutt__retro-jump-sfx.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 844639456814912
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
