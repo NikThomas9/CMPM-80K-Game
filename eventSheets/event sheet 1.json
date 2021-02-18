@@ -1,5 +1,136 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-code-pressed",
+					"objectClass": "Keyboard",
+					"sid": 373077237763033,
+					"parameters": {
+						"keycode": "37"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_jumpy",
+					"sid": 877634234324479,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 861800289728614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-code-pressed",
+					"objectClass": "Keyboard",
+					"sid": 712392573656840,
+					"parameters": {
+						"keycode": "39"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_jumpy",
+					"sid": 193274056105073,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 740925404782499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "spr_jumpy",
+					"sid": 584164061784589,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_jumpy",
+					"sid": 810844756638444,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 316560682825781,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 804679403401278
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "spr_jumpy",
+					"sid": 783759409028784,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 695550260395633,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 136797281526262
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_jumpy",
+					"sid": 723650889536785,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "spr_jumpy",
+					"sid": 339059604563666,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 342182085614584,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 226293593908251
+		}
+	],
 	"sid": 283391499526417
 }

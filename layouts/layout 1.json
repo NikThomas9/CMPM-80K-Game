@@ -135,10 +135,10 @@
 						}
 					},
 					"world": {
-						"x": 135,
-						"y": 314,
-						"width": 144,
-						"height": 180,
+						"x": 74,
+						"y": 359,
+						"width": 72,
+						"height": 90,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
