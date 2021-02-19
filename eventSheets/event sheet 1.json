@@ -5,12 +5,21 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-code-pressed",
+					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 373077237763033,
+					"sid": 385776102567312,
 					"parameters": {
-						"keycode": "37"
+						"key": 37
 					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 574353018203648,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -29,12 +38,21 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-code-pressed",
+					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 712392573656840,
+					"sid": 485538531080558,
 					"parameters": {
-						"keycode": "39"
+						"key": 39
 					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 185859804724030,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -63,6 +81,16 @@
 					"objectClass": "spr_jumpy",
 					"sid": 810844756638444,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "spr_jumpy",
+					"sid": 970373888328711,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 4,
+						"speed": "300"
+					}
 				}
 			],
 			"actions": [
@@ -145,11 +173,11 @@
 				{
 					"id": "play",
 					"objectClass": "Jump",
-					"sid": 194254900311467,
+					"sid": 310569220978604,
 					"parameters": {
 						"audio-file": "381689__stumpbutt__retro-jump-sfx",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-20",
 						"tag-optional": "\"\""
 					}
 				}

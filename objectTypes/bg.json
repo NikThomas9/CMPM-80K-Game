@@ -1,16 +1,10 @@
 {
-	"name": "TiledBackground2",
+	"name": "BG",
 	"plugin-id": "TiledBg",
-	"sid": 290026745432404,
+	"sid": 119267815541959,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 596422406302202
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 250,
@@ -20,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4573178,
+		"imageSpriteId": 9866607,
 		"useCollisionPoly": true
 	}
 }

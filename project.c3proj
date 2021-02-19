@@ -8,16 +8,16 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -34,6 +34,14 @@
 			"type": "plugin",
 			"id": "Audio",
 			"name": "Audio",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -58,13 +66,11 @@
 	"uniqueId": "zpkhj1a102o",
 	"objectTypes": {
 		"items": [
-			"jumpy_run_v",
-			"TiledBackground",
-			"jumpy",
-			"TiledBackground2",
+			"BG",
 			"spr_jumpy",
 			"Keyboard",
-			"Jump"
+			"Jump",
+			"Tilemap"
 		],
 		"subfolders": []
 	},
