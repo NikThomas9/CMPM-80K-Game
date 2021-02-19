@@ -1,0 +1,32 @@
+{
+	"name": "FontTiles",
+	"plugin-id": "Tilemap",
+	"sid": 423581057253565,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 374422495838342
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 234057476985705
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 384,
+		"height": 160,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7315439,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}
