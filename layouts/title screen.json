@@ -71,9 +71,9 @@
 						"tilemapData": {
 							"width": 62,
 							"height": 62,
-							"max-width": 74,
-							"max-height": 78,
-							"data": "555x0,1,77x0,13,77x0,15,77x0,18,77x0,16,77x0,8,77x0,15,77x0,21,77x0,19,662x0,20,77x0,8,77x0,9,77x0,19,388x0,9,77x0,19,384x0,1,384x0,20,77x0,5,77x0,19,77x0,20,77x0,28,2146x0"
+							"max-width": 85,
+							"max-height": 88,
+							"data": "625x0,1,87x0,13,87x0,15,87x0,18,87x0,16,87x0,8,87x0,15,87x0,21,87x0,19,6150x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -83,8 +83,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -177,
-						"y": -248,
+						"x": 19,
+						"y": -255,
 						"width": 1999,
 						"height": 1999,
 						"originX": 0,
@@ -111,10 +111,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 196,
-						"y": 207,
-						"width": 102,
-						"height": 104,
+						"x": 407,
+						"y": 320,
+						"width": 333.91693089461006,
+						"height": 340.46432169646516,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
