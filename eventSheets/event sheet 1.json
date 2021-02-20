@@ -282,6 +282,29 @@
 				}
 			],
 			"sid": 374489177233067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "spr_jumpy",
+					"sid": 730560940386885,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 574243462301849,
+					"parameters": {
+						"animation": "\"Fall\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 992818965138907
 		}
 	],
 	"sid": 283391499526417
