@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 23404,
-	"name": "Test Project",
+	"name": "Amorphous",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -56,6 +56,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -77,9 +85,11 @@
 			"BG",
 			"spr_jumpy",
 			"Keyboard",
-			"Jump",
+			"Audio",
 			"Tilemap",
-			"FontTiles"
+			"FontTiles",
+			"flag",
+			"blob"
 		],
 		"subfolders": []
 	},
@@ -91,13 +101,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Title Screen",
+			"Test Level"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
@@ -112,6 +124,16 @@
 					"name": "381689__stumpbutt__retro-jump-sfx.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 844639456814912
+				},
+				{
+					"name": "Undertale Sound Effect - You Win!.mp3",
+					"type": "audio/mpeg",
+					"sid": 924694894216336
+				},
+				{
+					"name": "f9f31cb915e35d8255d144f6a1935c53.mp3",
+					"type": "audio/mpeg",
+					"sid": 850175734266452
 				}
 			],
 			"subfolders": []
@@ -241,7 +263,7 @@
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "splash",
@@ -250,7 +272,7 @@
 		"enhancedAccelerationPrecision": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 400,
+	"viewportHeight": 400,
 	"firstLayout": null
 }

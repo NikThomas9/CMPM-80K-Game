@@ -13,14 +13,14 @@
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 96,
-		"height": 96,
+		"width": 384,
+		"height": 384,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 5804230,
+		"imageSpriteId": 6609153,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

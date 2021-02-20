@@ -172,7 +172,7 @@
 			"actions": [
 				{
 					"id": "play",
-					"objectClass": "Jump",
+					"objectClass": "Audio",
 					"sid": 310569220978604,
 					"parameters": {
 						"audio-file": "381689__stumpbutt__retro-jump-sfx",
@@ -183,6 +183,105 @@
 				}
 			],
 			"sid": 500378367602808
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "FontTiles",
+					"sid": 299367268781133,
+					"parameters": {
+						"comparison": 0,
+						"y-co-ordinate": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "FontTiles",
+					"sid": 292456690280331,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "-20",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 852201183720362
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "FontTiles",
+					"sid": 668444547724546,
+					"parameters": {
+						"comparison": 0,
+						"y-co-ordinate": "-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "FontTiles",
+					"sid": 612879368388672,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "0",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 383346699050687
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "spr_jumpy",
+					"sid": 124664078598525,
+					"parameters": {
+						"object": "flag"
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "Audio",
+					"sid": 661070127824161,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 606326655139668,
+					"parameters": {
+						"audio-file": "Undertale Sound Effect - You Win!",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 374489177233067
 		}
 	],
 	"sid": 283391499526417
