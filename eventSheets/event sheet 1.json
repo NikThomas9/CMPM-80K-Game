@@ -201,13 +201,29 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "FontTiles",
-					"sid": 292456690280331,
+					"sid": 630264683535067,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetY",
-						"end-value": "-20",
+						"end-value": "-30",
 						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FontTiles",
+					"sid": 210773100905868,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "10",
+						"time": "5",
 						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -223,10 +239,10 @@
 				{
 					"id": "compare-y",
 					"objectClass": "FontTiles",
-					"sid": 668444547724546,
+					"sid": 274837667722694,
 					"parameters": {
 						"comparison": 0,
-						"y-co-ordinate": "-20"
+						"y-co-ordinate": "-30"
 					}
 				}
 			],
@@ -234,13 +250,29 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "FontTiles",
-					"sid": 612879368388672,
+					"sid": 754519806999279,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetY",
 						"end-value": "0",
 						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FontTiles",
+					"sid": 646002571038052,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "-10",
+						"time": "2",
 						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
