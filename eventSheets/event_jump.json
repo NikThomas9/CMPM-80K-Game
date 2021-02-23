@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "event_Jump",
 	"events": [
 		{
 			"eventType": "block",
@@ -173,11 +173,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 310569220978604,
+					"sid": 357078153606657,
 					"parameters": {
-						"audio-file": "381689__stumpbutt__retro-jump-sfx",
+						"audio-file": "jump",
 						"loop": "not-looping",
-						"volume": "-20",
+						"volume": "-10",
 						"tag-optional": "\"\""
 					}
 				}
@@ -294,22 +294,34 @@
 					}
 				},
 				{
-					"id": "is-any-playing",
+					"id": "is-tag-playing",
 					"objectClass": "Audio",
-					"sid": 661070127824161,
+					"sid": 577785270445394,
+					"parameters": {
+						"tag": "\"win\""
+					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "play",
+					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 606326655139668,
+					"sid": 188303069411082,
 					"parameters": {
-						"audio-file": "Undertale Sound Effect - You Win!",
+						"folder": "sounds",
+						"audio-file-name": "\"win\"",
 						"loop": "not-looping",
-						"volume": "-10",
-						"tag-optional": "\"\""
+						"volume": "0",
+						"tag-optional": "\"win\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 370888929251788,
+					"parameters": {
+						"layout": "WinScreen"
 					}
 				}
 			],
@@ -337,6 +349,61 @@
 				}
 			],
 			"sid": 992818965138907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 182523016129677
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 340201174022249,
+					"parameters": {
+						"audio-file": "Track 1",
+						"loop": "looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 555550236195717
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "spr_jumpy",
+					"sid": 377906686422446,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 737014578495213,
+					"parameters": {
+						"audio-file": "landing_sound1",
+						"loop": "not-looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 161160520152835
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 265880606374873
 		}
 	],
 	"sid": 283391499526417

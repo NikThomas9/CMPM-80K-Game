@@ -89,7 +89,11 @@
 			"Tilemap",
 			"FontTiles",
 			"flag",
-			"blob"
+			"blob",
+			"Cloud",
+			"tutorialprompt",
+			"arrow",
+			"pogchamptwitchown3d"
 		],
 		"subfolders": []
 	},
@@ -102,14 +106,16 @@
 	"layouts": {
 		"items": [
 			"Title Screen",
-			"Test Level"
+			"Test Level",
+			"WinScreen"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Event sheet 2"
+			"event_Jump",
+			"event_Title",
+			"event_Win"
 		],
 		"subfolders": []
 	},
@@ -121,19 +127,29 @@
 		"sound": {
 			"items": [
 				{
-					"name": "381689__stumpbutt__retro-jump-sfx.webm",
+					"name": "jump.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 844639456814912
 				},
 				{
-					"name": "Undertale Sound Effect - You Win!.mp3",
+					"name": "win.mp3",
 					"type": "audio/mpeg",
 					"sid": 924694894216336
 				},
 				{
-					"name": "f9f31cb915e35d8255d144f6a1935c53.mp3",
+					"name": "Track 1.mp3",
 					"type": "audio/mpeg",
 					"sid": 850175734266452
+				},
+				{
+					"name": "landing_sound2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 710966572032234
+				},
+				{
+					"name": "landing_sound1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 893702159895133
 				}
 			],
 			"subfolders": []

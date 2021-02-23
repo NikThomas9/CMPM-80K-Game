@@ -1,0 +1,109 @@
+{
+	"name": "tutorialprompt",
+	"plugin-id": "Sprite",
+	"sid": 413924613834074,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 836912,
+						"collisionPoly": {
+							"points": [
+								0.38666666666666666,
+								0.38666666666666666,
+								0.5,
+								0.4,
+								0.59,
+								0.4066666666666667,
+								0.6233333333333333,
+								0.6233333333333333,
+								0.5,
+								0.63,
+								0.38,
+								0.6166666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5247896,
+						"collisionPoly": {
+							"points": [
+								0.38,
+								0.38,
+								0.5,
+								0.3933333333333333,
+								0.5966666666666667,
+								0.4,
+								0.6233333333333333,
+								0.6233333333333333,
+								0.5,
+								0.63,
+								0.3933333333333333,
+								0.6033333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3255281,
+						"collisionPoly": {
+							"points": [
+								0.38666666666666666,
+								0.38666666666666666,
+								0.5,
+								0.4,
+								0.5966666666666667,
+								0.4,
+								0.6233333333333333,
+								0.6233333333333333,
+								0.5,
+								0.6233333333333333,
+								0.38666666666666666,
+								0.61
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 271860500636688,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}

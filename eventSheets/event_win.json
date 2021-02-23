@@ -1,0 +1,38 @@
+{
+	"name": "event_Win",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 204957637870773,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 977359968636253,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 819798604536052,
+					"parameters": {
+						"layout": "Test Level"
+					}
+				}
+			],
+			"sid": 636846613813796
+		}
+	],
+	"sid": 953853772392289
+}

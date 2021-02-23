@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 2",
+	"name": "event_Title",
 	"events": [
 		{
 			"eventType": "block",
@@ -82,7 +82,7 @@
 					"objectClass": "Audio",
 					"sid": 163736283264346,
 					"parameters": {
-						"audio-file": "f9f31cb915e35d8255d144f6a1935c53",
+						"audio-file": "Track 1",
 						"loop": "looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -90,6 +90,38 @@
 				}
 			],
 			"sid": 389500539120071
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 402635785850495,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 965682088823824,
+					"parameters": {
+						"layout": "Test Level"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 918477771057578,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 168472383345243
 		}
 	],
 	"sid": 316712472935304
