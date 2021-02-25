@@ -1,0 +1,152 @@
+{
+	"name": "event_cutscene1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 433211079028771,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Cutscene1_Text",
+					"sid": 310127286526178,
+					"parameters": {
+						"animation": "\"Text1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Cutscene1_Text",
+					"sid": 764047624574964,
+					"parameters": {
+						"animation": "\"Text2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 467550961064038,
+					"parameters": {
+						"audio-file": "text_confirm",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"confirm\""
+					}
+				}
+			],
+			"sid": 387670673783481
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 293702355969912,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Cutscene1_Text",
+					"sid": 295356637582227,
+					"parameters": {
+						"animation": "\"Text2\""
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 559938304974315,
+					"parameters": {
+						"tag": "\"confirm\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Cutscene1_Text",
+					"sid": 607559694413623,
+					"parameters": {
+						"animation": "\"Text3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 573333296219682,
+					"parameters": {
+						"audio-file": "text_confirm",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"confirm\""
+					}
+				}
+			],
+			"sid": 121375099418547
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 944785735707065
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Cutscene1_Text",
+					"sid": 191198911877424,
+					"parameters": {
+						"animation": "\"Text3\""
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 511937675230086,
+					"parameters": {
+						"tag": "\"confirm\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 975229132961751,
+					"parameters": {
+						"layout": "Test Jump"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 526934568544460,
+					"parameters": {
+						"audio-file": "text_confirm",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 107832018303516
+		}
+	],
+	"sid": 753301914129641
+}

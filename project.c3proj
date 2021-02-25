@@ -95,7 +95,8 @@
 			"arrow",
 			"pogchamptwitchown3d",
 			"spr_bashy",
-			"BashyTilemap"
+			"BashyTilemap",
+			"Cutscene1_Text"
 		],
 		"subfolders": []
 	},
@@ -110,7 +111,8 @@
 			"Title Screen",
 			"Test Jump",
 			"WinScreen",
-			"Test Bash"
+			"Test Bash",
+			"Cutscene_1"
 		],
 		"subfolders": []
 	},
@@ -119,7 +121,8 @@
 			"event_Jump",
 			"event_Title",
 			"event_Win",
-			"event_Bash"
+			"event_Bash",
+			"event_cutscene1"
 		],
 		"subfolders": []
 	},
@@ -154,6 +157,11 @@
 					"name": "landing_sound1.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 893702159895133
+				},
+				{
+					"name": "text_confirm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 232055159365507
 				}
 			],
 			"subfolders": []
