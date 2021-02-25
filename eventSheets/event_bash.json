@@ -1,0 +1,141 @@
+{
+	"name": "event_Bash",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 897199329498297,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 427034566230279,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_bashy",
+					"sid": 804771226263312,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 769075085898959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 692724432125860,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 139409090114749,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_bashy",
+					"sid": 367889703592824,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 691418820106581
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "spr_bashy",
+					"sid": 111980276005741,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_bashy",
+					"sid": 342947028265764,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "spr_bashy",
+					"sid": 883817967531826,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 4,
+						"speed": "300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 863558132610784,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 134040195352824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_bashy",
+					"sid": 246669001953145,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "spr_bashy",
+					"sid": 758662678567750,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 289224872647096,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 738961029508473
+		}
+	],
+	"sid": 808825524418463
+}

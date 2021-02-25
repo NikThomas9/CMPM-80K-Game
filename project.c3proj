@@ -93,7 +93,9 @@
 			"Cloud",
 			"tutorialprompt",
 			"arrow",
-			"pogchamptwitchown3d"
+			"pogchamptwitchown3d",
+			"spr_bashy",
+			"BashyTilemap"
 		],
 		"subfolders": []
 	},
@@ -107,7 +109,8 @@
 		"items": [
 			"Title Screen",
 			"Test Level",
-			"WinScreen"
+			"WinScreen",
+			"Test Bash"
 		],
 		"subfolders": []
 	},
@@ -115,7 +118,8 @@
 		"items": [
 			"event_Jump",
 			"event_Title",
-			"event_Win"
+			"event_Win",
+			"event_Bash"
 		],
 		"subfolders": []
 	},

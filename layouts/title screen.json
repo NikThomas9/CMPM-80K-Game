@@ -159,5 +159,5 @@
 	"width": 2000,
 	"height": 2000,
 	"unboundedScrolling": false,
-	"eventSheet": "Event sheet 2"
+	"eventSheet": null
 }
