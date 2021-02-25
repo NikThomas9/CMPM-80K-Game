@@ -108,7 +108,7 @@
 	"layouts": {
 		"items": [
 			"Title Screen",
-			"Test Level",
+			"Test Jump",
 			"WinScreen",
 			"Test Bash"
 		],
