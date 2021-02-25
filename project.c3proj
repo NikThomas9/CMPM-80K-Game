@@ -96,7 +96,8 @@
 			"pogchamptwitchown3d",
 			"spr_bashy",
 			"BashyTilemap",
-			"Cutscene1_Text"
+			"Cutscene1_Text",
+			"BGTilemap"
 		],
 		"subfolders": []
 	},
