@@ -135,6 +135,40 @@
 				}
 			],
 			"sid": 738961029508473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "spr_bashy",
+					"sid": 362397908791763,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 313918871476289,
+					"parameters": {
+						"audio-file": "jump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 791652503963772,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 522389965832238
 		}
 	],
 	"sid": 808825524418463

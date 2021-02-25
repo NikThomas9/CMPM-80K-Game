@@ -22,10 +22,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
+						"x": -612,
 						"y": 0,
-						"width": 5983,
-						"height": 2994,
+						"width": 6595,
+						"height": 3373,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -73,7 +73,7 @@
 							"height": 92,
 							"max-width": 213,
 							"max-height": 119,
-							"data": "842x0,1,118x0,13,118x0,15,118x0,18,118x0,16,118x0,8,118x0,15,118x0,21,118x0,19,23552x0"
+							"data": "25347x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -128,7 +128,7 @@
 							"height": 96,
 							"max-width": 203,
 							"max-height": 308,
-							"data": "90x0,2,17,3x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,43029x0"
+							"data": "75x0,20x14,288x0,20x14,288x0,20x14,288x0,20x14,288x0,20x14,288x0,15x15,5x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,4x14,303x0,2,43029x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -138,8 +138,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 12,
-						"y": -63,
+						"x": 0,
+						"y": 0,
 						"width": 5967,
 						"height": 3081,
 						"originX": 0,
@@ -152,7 +152,36 @@
 						],
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 665396885101913,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Foreground",
+			"overriden": 0,
+			"instances": [
 				{
 					"type": "spr_bashy",
 					"properties": {
@@ -186,10 +215,10 @@
 						}
 					},
 					"world": {
-						"x": 193,
-						"y": 2746,
-						"width": 92,
-						"height": 94,
+						"x": 269,
+						"y": 2814,
+						"width": 124,
+						"height": 122,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -203,34 +232,6 @@
 					}
 				}
 			],
-			"sid": 665396885101913,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Foreground",
-			"overriden": 0,
-			"instances": [],
 			"sid": 777749654279709,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -261,6 +262,6 @@
 	"effectTypes": [],
 	"width": 6000,
 	"height": 3000,
-	"unboundedScrolling": true,
+	"unboundedScrolling": false,
 	"eventSheet": "event_Bash"
 }
