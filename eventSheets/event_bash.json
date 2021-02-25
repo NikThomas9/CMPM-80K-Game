@@ -83,6 +83,15 @@
 					"behaviorType": "Platform"
 				},
 				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 354053233614221,
+					"parameters": {
+						"animation": "\"Bash\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-speed",
 					"objectClass": "spr_bashy",
 					"sid": 883817967531826,
@@ -114,6 +123,15 @@
 					"objectClass": "spr_bashy",
 					"sid": 246669001953145,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 458938495313282,
+					"parameters": {
+						"animation": "\"Bash\""
+					},
+					"isInverted": true
 				},
 				{
 					"id": "is-moving",
@@ -169,6 +187,31 @@
 				}
 			],
 			"sid": 522389965832238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 554318331663135,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 814862869458467,
+					"parameters": {
+						"animation": "\"Bash\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 627380556987463
 		}
 	],
 	"sid": 808825524418463
