@@ -129,6 +129,15 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 997663841487932,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "400"
+					}
 				}
 			],
 			"sid": 134040195352824
@@ -167,6 +176,15 @@
 					"parameters": {
 						"animation": "\"Default\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 526225050869609,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "400"
 					}
 				}
 			],
