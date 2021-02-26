@@ -199,14 +199,23 @@
 			],
 			"actions": [
 				{
+					"id": "set-instvar-value",
+					"objectClass": "FontTiles",
+					"sid": 648878287669340,
+					"parameters": {
+						"instance-variable": "StartingPosition",
+						"value": "Self.Y"
+					}
+				},
+				{
 					"id": "tween-one-property",
 					"objectClass": "FontTiles",
-					"sid": 630264683535067,
+					"sid": 213016777143279,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetY",
-						"end-value": "-30",
+						"end-value": "Self.maxFloatDistance",
 						"time": "1",
 						"ease": "default",
 						"destroy-on-complete": "no",
@@ -239,10 +248,10 @@
 				{
 					"id": "compare-y",
 					"objectClass": "FontTiles",
-					"sid": 274837667722694,
+					"sid": 268875223246283,
 					"parameters": {
-						"comparison": 0,
-						"y-co-ordinate": "-30"
+						"comparison": 3,
+						"y-co-ordinate": "Self.MaxFloatDistance"
 					}
 				}
 			],
@@ -250,12 +259,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "FontTiles",
-					"sid": 754519806999279,
+					"sid": 483229596342412,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetY",
-						"end-value": "0",
+						"end-value": "Self.StartingPosition",
 						"time": "1",
 						"ease": "default",
 						"destroy-on-complete": "no",

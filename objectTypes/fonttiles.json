@@ -3,7 +3,20 @@
 	"plugin-id": "Tilemap",
 	"sid": 423581057253565,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "StartingPosition",
+			"type": "number",
+			"desc": "",
+			"sid": 564693585094350
+		},
+		{
+			"name": "MaxFloatDistance",
+			"type": "number",
+			"desc": "",
+			"sid": 329629791016631
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",

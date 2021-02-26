@@ -19,7 +19,9 @@
 						"image-angle": 0
 					},
 					"uid": 3,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"isMirrored": 1
+					},
 					"behaviors": {},
 					"world": {
 						"x": -10,
@@ -156,7 +158,10 @@
 						"drawing-mode": "top-to-right"
 					},
 					"uid": 4,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"StartingPosition": 0,
+						"MaxFloatDistance": -30
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {

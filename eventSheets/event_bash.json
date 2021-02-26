@@ -30,6 +30,15 @@
 					"parameters": {
 						"state": "mirrored"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_bashy",
+					"sid": 509043433965528,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "-1"
+					}
 				}
 			],
 			"sid": 769075085898959
@@ -62,6 +71,15 @@
 					"sid": 367889703592824,
 					"parameters": {
 						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_bashy",
+					"sid": 335420905111425,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "1"
 					}
 				}
 			],
@@ -125,11 +143,11 @@
 					"behaviorType": "Platform"
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "spr_bashy",
-					"sid": 458938495313282,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 146270071613382,
 					"parameters": {
-						"animation": "\"Bash\""
+						"key": 32
 					},
 					"isInverted": true
 				},
@@ -194,7 +212,54 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 554318331663135,
+					"sid": 720884740304975,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_bashy",
+					"sid": 169341152703405,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 518726301658430,
+					"parameters": {
+						"animation": "\"Bash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "spr_bashy",
+					"sid": 155215403985855,
+					"parameters": {
+						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
+					}
+				}
+			],
+			"sid": 219365415180209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 678812676640325,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 352555377608206,
 					"parameters": {
 						"key": 32
 					}
@@ -202,16 +267,25 @@
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "set-vector-x",
 					"objectClass": "spr_bashy",
-					"sid": 814862869458467,
+					"sid": 868705104315639,
+					"behaviorType": "Platform",
 					"parameters": {
-						"animation": "\"Bash\"",
-						"from": "beginning"
+						"vector-x": "Self.isMirrored * 5000"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 287461384648540,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "1500"
 					}
 				}
 			],
-			"sid": 627380556987463
+			"sid": 937073693456786
 		}
 	],
 	"sid": 808825524418463
