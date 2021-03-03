@@ -1,5 +1,5 @@
 {
-	"name": "Cutscene_1",
+	"name": "WinScreenDemo",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,16 +18,16 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 62,
+					"uid": 21,
 					"instanceVariables": {
 						"isMirrored": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 156,
-						"y": 77,
-						"width": 583,
-						"height": 321,
+						"x": 0,
+						"y": -6,
+						"width": 2000,
+						"height": 2001,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -39,57 +39,87 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 563262282458738,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0,
-				0,
-				0,
-				1
-			],
-			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Layer 1",
-			"overriden": 0,
-			"instances": [
+				},
 				{
-					"type": "Cutscene1_Text",
+					"type": "FontTiles",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "1",
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"StartingPosition": 0,
+						"MaxFloatDistance": -30
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 62,
+							"height": 62,
+							"max-width": 85,
+							"max-height": 88,
+							"data": "378x0,19,87x0,16,85x0,21,0,1,71x0,7,15x0,3,71x0,15,15x0,5,71x0,15,13x0,2,73x0,4,13x0,5,0,20,85x0,1,0,15,85x0,20,73x0,10,15x0,18,71x0,15,13x0,9,0,5,71x0,2,13x0,20,0,16,87x0,12,87x0,1,87x0,25,5869x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 19,
+						"y": -255,
+						"width": 1999,
+						"height": 1999,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pogchamptwitchown3d",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 29,
-					"instanceVariables": {
-						"s": "1",
-						"textString": 18,
-						"textNumber": 2
-					},
+					"uid": 23,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 459,
-						"y": 549,
-						"width": 600,
-						"height": 450,
+						"x": 389,
+						"y": 312,
+						"width": 445,
+						"height": 283,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -101,45 +131,16 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "blob",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 30,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 449,
-						"y": 256,
-						"width": 169.36381369155816,
-						"height": 172.6846727835495,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.278214720009011,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 146660597857145,
+			"sid": 784109610133923,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,
 				1,
-				0.6
+				1
 			],
 			"backgroundColor": [
 				0.3686274509803922,
@@ -147,7 +148,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": true,
+			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -157,11 +158,11 @@
 			"global": false
 		}
 	],
-	"sid": 436808846945345,
+	"sid": 489269512461093,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1800,
-	"height": 1400,
+	"width": 2000,
+	"height": 2000,
 	"unboundedScrolling": false,
-	"eventSheet": "event_cutscene1"
+	"eventSheet": "event_Title"
 }

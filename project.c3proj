@@ -97,7 +97,11 @@
 			"spr_bashy",
 			"BashyTilemap",
 			"Cutscene1_Text",
-			"BGTilemap"
+			"BGTilemap",
+			"LevelEnd",
+			"cutsceneWin",
+			"titleScreen",
+			"titleScreen2Sheet"
 		],
 		"subfolders": []
 	},
@@ -111,9 +115,10 @@
 		"items": [
 			"Title Screen",
 			"Test Jump",
-			"WinScreen",
 			"Test Bash",
-			"Cutscene_1"
+			"Cutscene_1",
+			"WinScreen",
+			"WinScreenDemo"
 		],
 		"subfolders": []
 	},

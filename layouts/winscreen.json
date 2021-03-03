@@ -6,30 +6,24 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "BG",
+					"type": "cutsceneWin",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 21,
-					"instanceVariables": {
-						"isMirrored": 1
-					},
+					"uid": 63,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": -6,
-						"width": 2000,
-						"height": 2001,
-						"originX": 0,
-						"originY": 0,
+						"x": -404,
+						"y": 907,
+						"width": 600,
+						"height": 450,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -41,70 +35,7 @@
 					}
 				},
 				{
-					"type": "FontTiles",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 22,
-					"instanceVariables": {
-						"StartingPosition": 0,
-						"MaxFloatDistance": -30
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 62,
-							"height": 62,
-							"max-width": 85,
-							"max-height": 88,
-							"data": "378x0,19,87x0,16,85x0,21,0,1,71x0,7,15x0,3,71x0,15,15x0,5,71x0,15,13x0,2,73x0,4,13x0,5,0,20,85x0,1,0,15,85x0,20,73x0,10,15x0,18,71x0,15,13x0,9,0,5,71x0,2,13x0,20,0,16,87x0,12,87x0,1,87x0,25,5869x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 19,
-						"y": -255,
-						"width": 1999,
-						"height": 1999,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pogchamptwitchown3d",
+					"type": "cutsceneWin",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -112,14 +43,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 64,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 389,
-						"y": 312,
-						"width": 445,
-						"height": 283,
+						"x": 453,
+						"y": 333,
+						"width": 600,
+						"height": 450,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -133,7 +64,7 @@
 					}
 				}
 			],
-			"sid": 784109610133923,
+			"sid": 360332281883082,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -143,9 +74,9 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				0,
+				0,
+				0,
 				1
 			],
 			"isTransparent": false,
@@ -158,11 +89,11 @@
 			"global": false
 		}
 	],
-	"sid": 489269512461093,
+	"sid": 255808060489249,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 2000,
-	"height": 2000,
+	"width": 1800,
+	"height": 1400,
 	"unboundedScrolling": false,
-	"eventSheet": "event_Title"
+	"eventSheet": "event_Win"
 }

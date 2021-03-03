@@ -297,9 +297,9 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "spr_jumpy",
-					"sid": 124664078598525,
+					"sid": 426776929638302,
 					"parameters": {
-						"object": "flag"
+						"object": "LevelEnd"
 					}
 				},
 				{
@@ -314,21 +314,9 @@
 			],
 			"actions": [
 				{
-					"id": "play-by-name",
-					"objectClass": "Audio",
-					"sid": 188303069411082,
-					"parameters": {
-						"folder": "sounds",
-						"audio-file-name": "\"win\"",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"win\""
-					}
-				},
-				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 370888929251788,
+					"sid": 824297302714909,
 					"parameters": {
 						"layout": "WinScreen"
 					}
@@ -407,12 +395,6 @@
 				}
 			],
 			"sid": 161160520152835
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 265880606374873
 		}
 	],
 	"sid": 283391499526417

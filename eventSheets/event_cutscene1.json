@@ -13,28 +13,38 @@
 					}
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "Cutscene1_Text",
-					"sid": 310127286526178,
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 545127326026900,
 					"parameters": {
-						"animation": "\"Text1\""
-					}
+						"tag": "\"confirm\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation",
 					"objectClass": "Cutscene1_Text",
-					"sid": 764047624574964,
+					"sid": 830630383108964,
 					"parameters": {
-						"animation": "\"Text2\"",
+						"animation": "str(Self.textNumber)",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Cutscene1_Text",
+					"sid": 293770927687025,
+					"parameters": {
+						"instance-variable": "textNumber",
+						"value": "1"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 467550961064038,
+					"sid": 158514639378725,
 					"parameters": {
 						"audio-file": "text_confirm",
 						"loop": "not-looping",
@@ -49,75 +59,22 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 293702355969912,
-					"parameters": {
-						"key": 32
-					}
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "Cutscene1_Text",
-					"sid": 295356637582227,
-					"parameters": {
-						"animation": "\"Text2\""
-					}
-				},
-				{
-					"id": "is-tag-playing",
-					"objectClass": "Audio",
-					"sid": 559938304974315,
-					"parameters": {
-						"tag": "\"confirm\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Cutscene1_Text",
-					"sid": 607559694413623,
-					"parameters": {
-						"animation": "\"Text3\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 573333296219682,
-					"parameters": {
-						"audio-file": "text_confirm",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"confirm\""
-					}
-				}
-			],
-			"sid": 121375099418547
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-any-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 944785735707065
+					"sid": 760101845813132
 				},
 				{
 					"id": "is-animation-playing",
 					"objectClass": "Cutscene1_Text",
-					"sid": 191198911877424,
+					"sid": 784789513892946,
 					"parameters": {
-						"animation": "\"Text3\""
+						"animation": "\"5\""
 					}
 				},
 				{
 					"id": "is-tag-playing",
 					"objectClass": "Audio",
-					"sid": 511937675230086,
+					"sid": 183852455005610,
 					"parameters": {
 						"tag": "\"confirm\""
 					},
@@ -128,7 +85,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 975229132961751,
+					"sid": 548316826065871,
 					"parameters": {
 						"layout": "Test Jump"
 					}
@@ -136,16 +93,21 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 526934568544460,
+					"sid": 387857103324309,
 					"parameters": {
 						"audio-file": "text_confirm",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 109120463124645
 				}
 			],
-			"sid": 107832018303516
+			"sid": 707312651836144
 		}
 	],
 	"sid": 753301914129641
