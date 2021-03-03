@@ -228,9 +228,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 720884740304975,
+					"sid": 917747813745161,
 					"parameters": {
 						"key": 32
 					}
@@ -246,18 +246,10 @@
 				{
 					"id": "set-animation",
 					"objectClass": "spr_bashy",
-					"sid": 518726301658430,
+					"sid": 728289402209231,
 					"parameters": {
-						"animation": "\"Bash\"",
+						"animation": "\"Punch\"",
 						"from": "beginning"
-					}
-				},
-				{
-					"id": "move-forward",
-					"objectClass": "spr_bashy",
-					"sid": 155215403985855,
-					"parameters": {
-						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
 					}
 				}
 			],
@@ -283,27 +275,51 @@
 					}
 				}
 			],
+			"actions": [],
+			"sid": 937073693456786
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-within-angle",
+					"objectClass": "pogchamptwitchown3d",
+					"sid": 513701394884091,
+					"parameters": {
+						"within": "0.5",
+						"angle": "0"
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_bashy",
-					"sid": 868705104315639,
+					"sid": 474378920382302,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-x": "Self.isMirrored * 5000"
 					}
 				},
 				{
+					"id": "move-forward",
+					"objectClass": "spr_bashy",
+					"sid": 200115151109797,
+					"parameters": {
+						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
+					}
+				},
+				{
 					"id": "set-max-speed",
 					"objectClass": "spr_bashy",
-					"sid": 287461384648540,
+					"sid": 120434362248949,
 					"behaviorType": "Platform",
 					"parameters": {
 						"max-speed": "1500"
 					}
 				}
 			],
-			"sid": 937073693456786
+			"sid": 559838352472814
 		}
 	],
 	"sid": 808825524418463
