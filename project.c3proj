@@ -101,7 +101,8 @@
 			"LevelEnd",
 			"cutsceneWin",
 			"titleScreen",
-			"titleScreen2Sheet"
+			"titleScreen2Sheet",
+			"credit"
 		],
 		"subfolders": []
 	},
