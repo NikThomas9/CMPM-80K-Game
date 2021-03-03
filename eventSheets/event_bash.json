@@ -117,6 +117,16 @@
 					"objectClass": "spr_bashy",
 					"sid": 342947028265764,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "spr_bashy",
+					"sid": 501928382998367,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 5,
+						"speed": "300"
+					}
 				}
 			],
 			"actions": [
