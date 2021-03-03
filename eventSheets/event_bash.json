@@ -20,6 +20,15 @@
 						"key": 39
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 513848098205835,
+					"parameters": {
+						"animation": "\"Punch\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -62,6 +71,15 @@
 						"key": 37
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 120091575144089,
+					"parameters": {
+						"animation": "\"Punch\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -99,25 +117,6 @@
 					"objectClass": "spr_bashy",
 					"sid": 342947028265764,
 					"behaviorType": "Platform"
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "spr_bashy",
-					"sid": 354053233614221,
-					"parameters": {
-						"animation": "\"Bash\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-speed",
-					"objectClass": "spr_bashy",
-					"sid": 883817967531826,
-					"behaviorType": "Platform",
-					"parameters": {
-						"comparison": 4,
-						"speed": "300"
-					}
 				}
 			],
 			"actions": [
@@ -152,19 +151,19 @@
 					"behaviorType": "Platform"
 				},
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 146270071613382,
-					"parameters": {
-						"key": 32
-					},
-					"isInverted": true
-				},
-				{
 					"id": "is-moving",
 					"objectClass": "spr_bashy",
 					"sid": 758662678567750,
 					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 254481715112545,
+					"parameters": {
+						"animation": "\"Punch\""
+					},
 					"isInverted": true
 				}
 			],
@@ -251,32 +250,18 @@
 						"animation": "\"Punch\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 996267104222627,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "0"
+					}
 				}
 			],
 			"sid": 219365415180209
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 678812676640325,
-					"parameters": {
-						"key": 38
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 352555377608206,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [],
-			"sid": 937073693456786
 		},
 		{
 			"eventType": "block",
@@ -320,6 +305,40 @@
 				}
 			],
 			"sid": 559838352472814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "spr_bashy",
+					"sid": 753328156915191,
+					"parameters": {
+						"animation": "\"Punch\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 567915912076838,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 746912048088700,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "400"
+					}
+				}
+			],
+			"sid": 614372193425631
 		}
 	],
 	"sid": 808825524418463

@@ -77,6 +77,14 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "zpkhj1a102o",
