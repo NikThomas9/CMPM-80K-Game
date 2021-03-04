@@ -395,6 +395,50 @@
 				}
 			],
 			"sid": 161160520152835
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "spr_jumpy",
+					"sid": 941400388104172,
+					"parameters": {
+						"object": "Sprite"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 745940432465678,
+					"parameters": {
+						"tag": "\"secret\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "virus",
+					"sid": 613638956487181,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 297657979353795,
+					"parameters": {
+						"audio-file": "win",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"secret\""
+					}
+				}
+			],
+			"sid": 596107724014643
 		}
 	],
 	"sid": 283391499526417
