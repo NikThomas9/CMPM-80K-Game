@@ -398,10 +398,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "coll_boulderSpawner",
-					"sid": 105397320490950,
+					"sid": 110832024526656,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "1",
+						"duration": "Self.maxTimer",
 						"type": "regular",
 						"tag": "\"Timer\""
 					}
