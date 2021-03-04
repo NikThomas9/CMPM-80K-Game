@@ -349,6 +349,59 @@
 				}
 			],
 			"sid": 614372193425631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 540231328461654,
+					"parameters": {
+						"animation": "\"Punch\""
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "spr_bashy",
+					"sid": 141353648203968,
+					"parameters": {
+						"object": "boulder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "boulder",
+					"sid": 849364801988233
+				}
+			],
+			"sid": 906734105809343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "collisions-enabled",
+					"objectClass": "boulderMove",
+					"sid": 379820034073559
+				}
+			],
+			"actions": [
+				{
+					"id": "set-one-property-tweens-end-value",
+					"objectClass": "boulderMove",
+					"sid": 445020300109962,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "Self.X - 10"
+					}
+				}
+			],
+			"sid": 430502153736623
 		}
 	],
 	"sid": 808825524418463

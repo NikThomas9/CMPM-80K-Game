@@ -1,0 +1,73 @@
+{
+	"name": "boulderMove",
+	"plugin-id": "Sprite",
+	"sid": 181857276406228,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 360389380551597
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 851778706544957
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 668720545831430
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 124,
+						"height": 118,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6355052,
+						"collisionPoly": {
+							"points": [
+								0.16129032258064516,
+								0.1694915254237288,
+								0.5,
+								0,
+								0.8467741935483871,
+								0.15254237288135594,
+								0.9919354838709677,
+								0.5,
+								0.8629032258064516,
+								0.8559322033898306,
+								0.5,
+								0.9915254237288136,
+								0.11290322580645161,
+								0.8728813559322034,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 895200401052578,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
