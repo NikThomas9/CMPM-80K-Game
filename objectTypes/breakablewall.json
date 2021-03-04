@@ -1,24 +1,24 @@
 {
-	"name": "boulderMove",
+	"name": "breakableWall",
 	"plugin-id": "Sprite",
-	"sid": 181857276406228,
+	"sid": 758078929570832,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Rotate",
 			"name": "Rotate",
-			"sid": 360389380551597
+			"sid": 705440412163196
 		},
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 851778706544957
+			"sid": 842517028605291
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 668720545831430
+			"sid": 844168780916213
 		}
 	],
 	"effectTypes": [],
@@ -34,7 +34,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6355052,
+						"imageSpriteId": 5841098,
 						"collisionPoly": {
 							"points": [
 								0.16129032258064516,
@@ -59,7 +59,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 895200401052578,
+				"sid": 837137308436756,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -80,8 +80,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
+			"id": "MoveTo",
+			"name": "Move To",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -90,6 +90,22 @@
 			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -119,10 +135,11 @@
 			"titleScreen",
 			"titleScreen2Sheet",
 			"credit",
+			"breakableWall",
 			"boulder",
-			"boulderMove",
 			"virus",
-			"Sprite"
+			"Sprite",
+			"boulderSpawner"
 		],
 		"subfolders": []
 	},

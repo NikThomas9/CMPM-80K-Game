@@ -277,49 +277,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-within-angle",
-					"objectClass": "pogchamptwitchown3d",
-					"sid": 513701394884091,
-					"parameters": {
-						"within": "0.5",
-						"angle": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-vector-x",
-					"objectClass": "spr_bashy",
-					"sid": 474378920382302,
-					"behaviorType": "Platform",
-					"parameters": {
-						"vector-x": "Self.isMirrored * 5000"
-					}
-				},
-				{
-					"id": "move-forward",
-					"objectClass": "spr_bashy",
-					"sid": 200115151109797,
-					"parameters": {
-						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "spr_bashy",
-					"sid": 120434362248949,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "1500"
-					}
-				}
-			],
-			"sid": 559838352472814
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-animation-finished",
 					"objectClass": "spr_bashy",
 					"sid": 753328156915191,
@@ -354,26 +311,26 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "spr_bashy",
+					"sid": 652895164169715,
+					"parameters": {
+						"object": "breakableWall"
+					}
+				},
+				{
 					"id": "is-animation-playing",
 					"objectClass": "spr_bashy",
 					"sid": 540231328461654,
 					"parameters": {
 						"animation": "\"Punch\""
 					}
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "spr_bashy",
-					"sid": 141353648203968,
-					"parameters": {
-						"object": "boulder"
-					}
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "boulder",
+					"objectClass": "breakableWall",
 					"sid": 849364801988233
 				}
 			],
@@ -383,25 +340,178 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "collisions-enabled",
-					"objectClass": "boulderMove",
-					"sid": 379820034073559
+					"id": "on-collision-with-another-object",
+					"objectClass": "spr_bashy",
+					"sid": 228679244620803,
+					"parameters": {
+						"object": "boulder"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 821241831212562,
+					"parameters": {
+						"animation": "\"Punch\""
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-one-property-tweens-end-value",
-					"objectClass": "boulderMove",
-					"sid": 445020300109962,
-					"behaviorType": "Tween",
+					"id": "destroy",
+					"objectClass": "boulder",
+					"sid": 309088625462381
+				}
+			],
+			"sid": 265770302870331
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "collisions-enabled",
+					"objectClass": "boulder",
+					"sid": 379820034073559
+				}
+			],
+			"actions": [],
+			"sid": 430502153736623
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-within-angle",
+					"objectClass": "pogchamptwitchown3d",
+					"sid": 631379701021172,
 					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetX",
-						"end-value": "Self.X - 10"
+						"within": "0.5",
+						"angle": "0"
 					}
 				}
 			],
-			"sid": 430502153736623
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_bashy",
+					"sid": 565585611067282,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "Self.isMirrored * 5000"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "spr_bashy",
+					"sid": 863985231181044,
+					"parameters": {
+						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "spr_bashy",
+					"sid": 711125862529834,
+					"parameters": {
+						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 128203306558740,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "1500"
+					}
+				}
+			],
+			"sid": 626626789483607
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "boulderSpawner",
+					"sid": 216087349972644
+				}
+			],
+			"actions": [
+				{
+					"id": "start-timer",
+					"objectClass": "boulderSpawner",
+					"sid": 839067716483665,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "5",
+						"type": "regular",
+						"tag": "\"Timer\""
+					}
+				}
+			],
+			"sid": 310083252303801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "boulderSpawner",
+					"sid": 884603644360450,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Timer\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "boulderSpawner",
+					"sid": 110517821616640,
+					"parameters": {
+						"object": "boulder",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 381530409038509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "spr_bashy",
+					"sid": 105893731386736,
+					"parameters": {
+						"comparison": 0,
+						"number": "3"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 717663046719022,
+					"parameters": {
+						"animation": "\"Punch\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "spr_bashy",
+					"sid": 959951953786488,
+					"parameters": {
+						"distance": "Self.isMirrored * 5"
+					}
+				}
+			],
+			"sid": 674700368793890
 		}
 	],
 	"sid": 808825524418463
