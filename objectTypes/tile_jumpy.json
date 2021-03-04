@@ -1,14 +1,14 @@
 {
-	"name": "BashyTilemap",
+	"name": "tile_Jumpy",
 	"plugin-id": "Tilemap",
-	"sid": 403735927011548,
+	"sid": 834627131251075,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 432115545954236
+			"sid": 314405712583729
 		}
 	],
 	"effectTypes": [],
@@ -20,7 +20,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 5474944,
+		"imageSpriteId": 1559308,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "cutsceneWin",
+					"type": "text_win",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -35,7 +35,7 @@
 					}
 				},
 				{
-					"type": "cutsceneWin",
+					"type": "text_win",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -64,7 +64,7 @@
 					}
 				},
 				{
-					"type": "credit",
+					"type": "text_credit",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

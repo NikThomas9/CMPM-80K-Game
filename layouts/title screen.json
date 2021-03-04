@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "titleScreen",
+					"type": "text_title1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -64,7 +64,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "blob",
+					"type": "spr_blob",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -93,7 +93,7 @@
 					}
 				},
 				{
-					"type": "titleScreen2Sheet",
+					"type": "text_title2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

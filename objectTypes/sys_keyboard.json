@@ -1,9 +1,9 @@
 {
-	"name": "Keyboard",
+	"name": "sys_Keyboard",
 	"plugin-id": "Keyboard",
 	"sid": 608343314443396,
 	"singleglobal-inst": {
-		"type": "Keyboard",
+		"type": "sys_Keyboard",
 		"properties": {},
 		"uid": 5
 	}

@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 433211079028771,
 					"parameters": {
 						"key": 32
@@ -14,7 +14,7 @@
 				},
 				{
 					"id": "is-tag-playing",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 545127326026900,
 					"parameters": {
 						"tag": "\"confirm\""
@@ -25,7 +25,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Cutscene1_Text",
+					"objectClass": "text_c1",
 					"sid": 830630383108964,
 					"parameters": {
 						"animation": "str(Self.textNumber)",
@@ -34,7 +34,7 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Cutscene1_Text",
+					"objectClass": "text_c1",
 					"sid": 293770927687025,
 					"parameters": {
 						"instance-variable": "textNumber",
@@ -43,7 +43,7 @@
 				},
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 158514639378725,
 					"parameters": {
 						"audio-file": "text_confirm",
@@ -60,12 +60,12 @@
 			"conditions": [
 				{
 					"id": "on-any-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 760101845813132
 				},
 				{
 					"id": "is-animation-playing",
-					"objectClass": "Cutscene1_Text",
+					"objectClass": "text_c1",
 					"sid": 784789513892946,
 					"parameters": {
 						"animation": "\"5\""
@@ -73,7 +73,7 @@
 				},
 				{
 					"id": "is-tag-playing",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 183852455005610,
 					"parameters": {
 						"tag": "\"confirm\""
@@ -92,7 +92,7 @@
 				},
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 387857103324309,
 					"parameters": {
 						"audio-file": "text_confirm",
@@ -103,7 +103,7 @@
 				},
 				{
 					"id": "stop-all",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 109120463124645
 				}
 			],

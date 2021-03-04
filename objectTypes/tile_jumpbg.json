@@ -1,16 +1,10 @@
 {
-	"name": "Tilemap",
+	"name": "tile_JumpBG",
 	"plugin-id": "Tilemap",
-	"sid": 834627131251075,
+	"sid": 884203540499988,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 314405712583729
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 384,
@@ -20,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 1559308,
+		"imageSpriteId": 7568637,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

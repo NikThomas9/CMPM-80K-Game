@@ -1,0 +1,27 @@
+{
+	"name": "tile_Bashy",
+	"plugin-id": "Tilemap",
+	"sid": 403735927011548,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 432115545954236
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 384,
+		"height": 384,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 177251,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

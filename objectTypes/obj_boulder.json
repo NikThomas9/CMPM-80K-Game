@@ -1,15 +1,10 @@
 {
-	"name": "boulder",
+	"name": "obj_boulder",
 	"plugin-id": "Sprite",
 	"sid": 181857276406228,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
-		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 360389380551597
-		},
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
@@ -19,6 +14,11 @@
 			"behaviorId": "Bullet",
 			"name": "Bullet",
 			"sid": 874492059679727
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 520161358654478
 		}
 	],
 	"effectTypes": [],

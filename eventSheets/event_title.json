@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "compare-y",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 427062135508810,
 					"parameters": {
 						"comparison": 0,
@@ -17,7 +17,7 @@
 			"actions": [
 				{
 					"id": "tween-one-property",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 108435151680503,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -39,7 +39,7 @@
 			"conditions": [
 				{
 					"id": "compare-y",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 611465063136125,
 					"parameters": {
 						"comparison": 0,
@@ -50,7 +50,7 @@
 			"actions": [
 				{
 					"id": "tween-one-property",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 211993864355873,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -79,7 +79,7 @@
 			"actions": [
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 163736283264346,
 					"parameters": {
 						"audio-file": "Track 1",
@@ -96,7 +96,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 218603860739542,
 					"parameters": {
 						"key": 32
@@ -114,7 +114,7 @@
 				},
 				{
 					"id": "stop",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 918477771057578,
 					"parameters": {
 						"tag": "\"\""

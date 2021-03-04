@@ -1,7 +1,7 @@
 {
-	"name": "cutsceneWin",
+	"name": "text_credit",
 	"plugin-id": "Sprite",
-	"sid": 760574174685166,
+	"sid": 218162657665130,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 600,
-						"height": 450,
+						"width": 200,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8203929,
+						"imageSpriteId": 3327862,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 985559550372039,
+				"sid": 627042170546677,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

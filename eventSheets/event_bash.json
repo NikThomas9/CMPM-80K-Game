@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 897199329498297,
 					"parameters": {
 						"key": 37
@@ -14,7 +14,7 @@
 				},
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 427034566230279,
 					"parameters": {
 						"key": 39
@@ -57,7 +57,7 @@
 			"conditions": [
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 692724432125860,
 					"parameters": {
 						"key": 39
@@ -65,7 +65,7 @@
 				},
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 139409090114749,
 					"parameters": {
 						"key": 37
@@ -138,15 +138,6 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "spr_bashy",
-					"sid": 997663841487932,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "400"
-					}
 				}
 			],
 			"sid": 134040195352824
@@ -190,10 +181,19 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_bashy",
-					"sid": 526225050869609,
+					"sid": 884016527544357,
 					"behaviorType": "Platform",
 					"parameters": {
 						"max-speed": "400"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_bashy",
+					"sid": 351789521498007,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
 					}
 				}
 			],
@@ -212,10 +212,10 @@
 			"actions": [
 				{
 					"id": "play",
-					"objectClass": "Audio",
-					"sid": 313918871476289,
+					"objectClass": "sys_Audio",
+					"sid": 574776907122360,
 					"parameters": {
-						"audio-file": "jump",
+						"audio-file": "bashy_jump_test",
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
@@ -238,7 +238,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 917747813745161,
 					"parameters": {
 						"key": 32
@@ -294,15 +294,6 @@
 						"animation": "\"Default\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "spr_bashy",
-					"sid": 746912048088700,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "400"
-					}
 				}
 			],
 			"sid": 614372193425631
@@ -315,7 +306,7 @@
 					"objectClass": "spr_bashy",
 					"sid": 652895164169715,
 					"parameters": {
-						"object": "breakableWall"
+						"object": "obj_wall"
 					}
 				},
 				{
@@ -330,7 +321,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "breakableWall",
+					"objectClass": "obj_wall",
 					"sid": 849364801988233
 				}
 			],
@@ -344,7 +335,7 @@
 					"objectClass": "spr_bashy",
 					"sid": 228679244620803,
 					"parameters": {
-						"object": "boulder"
+						"object": "obj_boulder"
 					}
 				},
 				{
@@ -359,7 +350,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "boulder",
+					"objectClass": "obj_boulder",
 					"sid": 309088625462381
 				}
 			],
@@ -369,82 +360,48 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "collisions-enabled",
-					"objectClass": "boulder",
-					"sid": 379820034073559
-				}
-			],
-			"actions": [],
-			"sid": 430502153736623
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-within-angle",
-					"objectClass": "pogchamptwitchown3d",
-					"sid": 631379701021172,
+					"id": "on-collision-with-another-object",
+					"objectClass": "spr_bashy",
+					"sid": 486445929824867,
 					"parameters": {
-						"within": "0.5",
-						"angle": "0"
+						"object": "coll_boulderSpawner"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 592237609568477,
+					"parameters": {
+						"animation": "\"Punch\""
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-vector-x",
-					"objectClass": "spr_bashy",
-					"sid": 565585611067282,
-					"behaviorType": "Platform",
-					"parameters": {
-						"vector-x": "Self.isMirrored * 5000"
-					}
-				},
-				{
-					"id": "move-forward",
-					"objectClass": "spr_bashy",
-					"sid": 863985231181044,
-					"parameters": {
-						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
-					}
-				},
-				{
-					"id": "move-forward",
-					"objectClass": "spr_bashy",
-					"sid": 711125862529834,
-					"parameters": {
-						"distance": "lerp(1 * Self.isMirrored, 500 * Self.isMirrored, dt/1)"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "spr_bashy",
-					"sid": 128203306558740,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "1500"
-					}
+					"id": "destroy",
+					"objectClass": "coll_boulderSpawner",
+					"sid": 119980972289640
 				}
 			],
-			"sid": 626626789483607
+			"sid": 880949352806611
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-created",
-					"objectClass": "boulderSpawner",
+					"objectClass": "coll_boulderSpawner",
 					"sid": 216087349972644
 				}
 			],
 			"actions": [
 				{
 					"id": "start-timer",
-					"objectClass": "boulderSpawner",
-					"sid": 839067716483665,
+					"objectClass": "coll_boulderSpawner",
+					"sid": 105397320490950,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "5",
+						"duration": "1",
 						"type": "regular",
 						"tag": "\"Timer\""
 					}
@@ -457,7 +414,7 @@
 			"conditions": [
 				{
 					"id": "on-timer",
-					"objectClass": "boulderSpawner",
+					"objectClass": "coll_boulderSpawner",
 					"sid": 884603644360450,
 					"behaviorType": "Timer",
 					"parameters": {
@@ -468,12 +425,12 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "boulderSpawner",
-					"sid": 110517821616640,
+					"objectClass": "coll_boulderSpawner",
+					"sid": 804804516159112,
 					"parameters": {
-						"object": "boulder",
+						"object": "obj_boulder",
 						"layer": "0",
-						"image-point": "0",
+						"image-point": "10",
 						"create-hierarchy": false
 					}
 				}
@@ -512,6 +469,223 @@
 				}
 			],
 			"sid": 674700368793890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "tile_Words",
+					"sid": 503790474606405,
+					"parameters": {
+						"comparison": 0,
+						"y-co-ordinate": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "tile_Words",
+					"sid": 240394716788133,
+					"parameters": {
+						"instance-variable": "StartingPosition",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 845889038409790,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.maxFloatDistance",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 545088395722137,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "10",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 918978105818846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "tile_Words",
+					"sid": 939533029165012,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "Self.MaxFloatDistance"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 407194019156144,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.StartingPosition",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 963572653967650,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "-10",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 886152556701288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "obj_boulder",
+					"sid": 207106966018997,
+					"parameters": {
+						"object": "spr_bashy"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 790393163525396,
+					"parameters": {
+						"animation": "\"Punch\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "obj_boulder",
+					"sid": 180483368202665
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_bashy",
+					"sid": 651746688529513,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "-1000"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "spr_bashy",
+					"sid": 755625065014963,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-500"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 528512007430552,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "2000"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_bashy",
+					"sid": 749474151116371,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				}
+			],
+			"sid": 671702010505941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "spr_bashy",
+					"sid": 379217505530321,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 786483355546692,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "400"
+					}
+				}
+			],
+			"sid": 604132280972497
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "obj_boulder",
+					"sid": 837513526144330,
+					"parameters": {
+						"object": "coll_boulderDestroyer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "obj_boulder",
+					"sid": 873635943460013
+				}
+			],
+			"sid": 382413030804758
 		}
 	],
 	"sid": 808825524418463

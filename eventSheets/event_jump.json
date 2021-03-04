@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 385776102567312,
 					"parameters": {
 						"key": 37
@@ -14,7 +14,7 @@
 				},
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 574353018203648,
 					"parameters": {
 						"key": 39
@@ -39,7 +39,7 @@
 			"conditions": [
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 485538531080558,
 					"parameters": {
 						"key": 39
@@ -47,7 +47,7 @@
 				},
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 185859804724030,
 					"parameters": {
 						"key": 37
@@ -172,7 +172,7 @@
 			"actions": [
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 357078153606657,
 					"parameters": {
 						"audio-file": "jump",
@@ -189,7 +189,7 @@
 			"conditions": [
 				{
 					"id": "compare-y",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 299367268781133,
 					"parameters": {
 						"comparison": 0,
@@ -200,7 +200,7 @@
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 648878287669340,
 					"parameters": {
 						"instance-variable": "StartingPosition",
@@ -209,7 +209,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 213016777143279,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -225,7 +225,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 210773100905868,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -247,7 +247,7 @@
 			"conditions": [
 				{
 					"id": "compare-y",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 268875223246283,
 					"parameters": {
 						"comparison": 3,
@@ -258,7 +258,7 @@
 			"actions": [
 				{
 					"id": "tween-one-property",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 483229596342412,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -274,7 +274,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "FontTiles",
+					"objectClass": "tile_Words",
 					"sid": 646002571038052,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -299,12 +299,12 @@
 					"objectClass": "spr_jumpy",
 					"sid": 426776929638302,
 					"parameters": {
-						"object": "LevelEnd"
+						"object": "coll_LevelEnd"
 					}
 				},
 				{
 					"id": "is-tag-playing",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 577785270445394,
 					"parameters": {
 						"tag": "\"win\""
@@ -359,7 +359,7 @@
 			"actions": [
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 340201174022249,
 					"parameters": {
 						"audio-file": "Track 1",
@@ -384,7 +384,7 @@
 			"actions": [
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 737014578495213,
 					"parameters": {
 						"audio-file": "landing_sound1",
@@ -404,12 +404,12 @@
 					"objectClass": "spr_jumpy",
 					"sid": 941400388104172,
 					"parameters": {
-						"object": "Sprite"
+						"object": "coll_Secret"
 					}
 				},
 				{
 					"id": "is-tag-playing",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 745940432465678,
 					"parameters": {
 						"tag": "\"secret\""
@@ -420,7 +420,7 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "virus",
+					"objectClass": "spr_virus",
 					"sid": 613638956487181,
 					"parameters": {
 						"visibility": "visible"
@@ -428,7 +428,7 @@
 				},
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 297657979353795,
 					"parameters": {
 						"audio-file": "win",

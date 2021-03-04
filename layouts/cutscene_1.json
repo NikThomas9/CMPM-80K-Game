@@ -4,43 +4,7 @@
 		{
 			"name": "Layer 0",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "BG",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 62,
-					"instanceVariables": {
-						"isMirrored": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 156,
-						"y": 77,
-						"width": 583,
-						"height": 321,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 563262282458738,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -70,7 +34,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Cutscene1_Text",
+					"type": "text_c1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "1",
@@ -103,7 +67,7 @@
 					}
 				},
 				{
-					"type": "blob",
+					"type": "spr_blob",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

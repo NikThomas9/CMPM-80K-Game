@@ -1,16 +1,10 @@
 {
-	"name": "boulderSpawner",
+	"name": "coll_boulderDestroyer",
 	"plugin-id": "Sprite",
-	"sid": 315298737139468,
+	"sid": 563749536792070,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Timer",
-			"name": "Timer",
-			"sid": 840914356659876
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2092659,
+						"imageSpriteId": 6983506,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 600145940735541,
+				"sid": 526126186297715,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

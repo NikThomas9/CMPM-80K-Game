@@ -1,7 +1,7 @@
 {
-	"name": "BGTilemap",
+	"name": "tile_BashyBG",
 	"plugin-id": "Tilemap",
-	"sid": 884203540499988,
+	"sid": 764683515269143,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 7568637,
+		"imageSpriteId": 4381882,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

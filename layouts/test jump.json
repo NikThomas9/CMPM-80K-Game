@@ -6,42 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "BG",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 3,
-					"instanceVariables": {
-						"isMirrored": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": -10,
-						"y": -15,
-						"width": 2010,
-						"height": 3015,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BGTilemap",
+					"type": "tile_JumpBG",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 32,
@@ -89,7 +54,7 @@
 					}
 				},
 				{
-					"type": "Tilemap",
+					"type": "tile_Jumpy",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 32,
@@ -144,7 +109,7 @@
 					}
 				},
 				{
-					"type": "FontTiles",
+					"type": "tile_Words",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 32,
@@ -207,7 +172,7 @@
 					}
 				},
 				{
-					"type": "tutorialprompt",
+					"type": "text_jumpyTutorial",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -236,7 +201,7 @@
 					}
 				},
 				{
-					"type": "arrow",
+					"type": "obj_arrow",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -265,7 +230,7 @@
 					}
 				},
 				{
-					"type": "arrow",
+					"type": "obj_arrow",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -294,7 +259,7 @@
 					}
 				},
 				{
-					"type": "Sprite",
+					"type": "coll_Secret",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -323,7 +288,7 @@
 					}
 				},
 				{
-					"type": "virus",
+					"type": "spr_virus",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Default",
@@ -430,7 +395,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -466,7 +431,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -502,7 +467,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -538,7 +503,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -574,7 +539,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -610,7 +575,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -646,7 +611,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -682,7 +647,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -718,7 +683,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -754,7 +719,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -790,7 +755,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -826,7 +791,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -862,7 +827,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -898,7 +863,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -934,7 +899,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -970,7 +935,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1006,7 +971,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1042,7 +1007,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1078,7 +1043,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1114,7 +1079,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1150,7 +1115,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1186,7 +1151,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1222,7 +1187,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1258,7 +1223,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1294,7 +1259,7 @@
 					}
 				},
 				{
-					"type": "LevelEnd",
+					"type": "coll_LevelEnd",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1323,7 +1288,7 @@
 					}
 				},
 				{
-					"type": "arrow",
+					"type": "obj_arrow",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1352,7 +1317,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1388,7 +1353,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1424,7 +1389,7 @@
 					}
 				},
 				{
-					"type": "Cloud",
+					"type": "obj_cloud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

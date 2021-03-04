@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "key-is-down",
-					"objectClass": "Keyboard",
+					"objectClass": "sys_Keyboard",
 					"sid": 204957637870773,
 					"parameters": {
 						"key": 32
@@ -24,7 +24,7 @@
 				},
 				{
 					"id": "play",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 655560588055078,
 					"parameters": {
 						"audio-file": "text_confirm",
@@ -35,7 +35,7 @@
 				},
 				{
 					"id": "stop-all",
-					"objectClass": "Audio",
+					"objectClass": "sys_Audio",
 					"sid": 177627624394618
 				}
 			],

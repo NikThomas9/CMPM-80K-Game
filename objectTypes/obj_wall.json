@@ -1,24 +1,14 @@
 {
-	"name": "breakableWall",
+	"name": "obj_wall",
 	"plugin-id": "Sprite",
 	"sid": 758078929570832,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 705440412163196
-		},
-		{
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 842517028605291
-		},
-		{
-			"behaviorId": "Tween",
-			"name": "Tween",
-			"sid": 844168780916213
 		}
 	],
 	"effectTypes": [],
@@ -27,14 +17,14 @@
 			{
 				"frames": [
 					{
-						"width": 124,
-						"height": 118,
+						"width": 40,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5841098,
+						"imageSpriteId": 7694636,
 						"collisionPoly": {
 							"points": [
 								0.16129032258064516,
