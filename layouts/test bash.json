@@ -1679,6 +1679,42 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "obj_cloud",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 7370.5586336382585,
+						"y": 2360.423781351087,
+						"width": 121.24954220352245,
+						"height": 34.38519336975036,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.0678575480825403,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 665396885101913,
@@ -1755,8 +1791,8 @@
 						}
 					},
 					"world": {
-						"x": 7608,
-						"y": 2429,
+						"x": 7400,
+						"y": 2482,
 						"width": 124,
 						"height": 122,
 						"originX": 0.5,
