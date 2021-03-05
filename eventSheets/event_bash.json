@@ -812,6 +812,30 @@
 				}
 			],
 			"sid": 382413030804758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 387651711476524
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 721408703653811,
+					"parameters": {
+						"audio-file": "Reversed_Game_Song",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 741086888396534
 		}
 	],
 	"sid": 808825524418463
