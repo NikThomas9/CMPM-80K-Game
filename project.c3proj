@@ -211,14 +211,19 @@
 					"sid": 392686847176695
 				},
 				{
-					"name": "Bashy_punch.webm",
+					"name": "wall_smash.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 431350866233131
 				},
 				{
-					"name": "boulder_wall_smash.webm",
+					"name": "boulder_smash.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 210570190394428
+				},
+				{
+					"name": "whiff_sound_punch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 244250317185845
 				}
 			],
 			"subfolders": []

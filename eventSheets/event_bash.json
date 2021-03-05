@@ -310,6 +310,15 @@
 					}
 				},
 				{
+					"id": "compare-animation-frame",
+					"objectClass": "spr_bashy",
+					"sid": 385031700371724,
+					"parameters": {
+						"comparison": 4,
+						"number": "1"
+					}
+				},
+				{
 					"id": "is-animation-playing",
 					"objectClass": "spr_bashy",
 					"sid": 540231328461654,
@@ -323,6 +332,17 @@
 					"id": "destroy",
 					"objectClass": "obj_wall",
 					"sid": 849364801988233
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 835102755924357,
+					"parameters": {
+						"audio-file": "wall_smash",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 906734105809343
@@ -345,6 +365,15 @@
 					"parameters": {
 						"animation": "\"Punch\""
 					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "spr_bashy",
+					"sid": 762389490389266,
+					"parameters": {
+						"comparison": 4,
+						"number": "1"
+					}
 				}
 			],
 			"actions": [
@@ -352,6 +381,25 @@
 					"id": "destroy",
 					"objectClass": "obj_boulder",
 					"sid": 309088625462381
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 380630396126770,
+					"parameters": {
+						"audio-file": "boulder_smash",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "sys_Audio",
+					"sid": 255127620463482,
+					"parameters": {
+						"tag": "\"Punch\""
+					}
 				}
 			],
 			"sid": 265770302870331
@@ -368,6 +416,15 @@
 					}
 				},
 				{
+					"id": "compare-animation-frame",
+					"objectClass": "spr_bashy",
+					"sid": 933382167985069,
+					"parameters": {
+						"comparison": 4,
+						"number": "1"
+					}
+				},
+				{
 					"id": "is-animation-playing",
 					"objectClass": "spr_bashy",
 					"sid": 592237609568477,
@@ -381,6 +438,25 @@
 					"id": "destroy",
 					"objectClass": "coll_boulderSpawner",
 					"sid": 119980972289640
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 973600964323170,
+					"parameters": {
+						"audio-file": "boulder_smash",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "sys_Audio",
+					"sid": 921217626821965,
+					"parameters": {
+						"tag": "\"Punch\""
+					}
 				}
 			],
 			"sid": 880949352806611
@@ -456,6 +532,15 @@
 					"parameters": {
 						"animation": "\"Punch\""
 					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "sys_Audio",
+					"sid": 792730422809690,
+					"parameters": {
+						"tag": "\"Punch\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -465,6 +550,17 @@
 					"sid": 959951953786488,
 					"parameters": {
 						"distance": "Self.isMirrored * 5"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 650706929401165,
+					"parameters": {
+						"audio-file": "whiff_sound_punch",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"Punch\""
 					}
 				}
 			],
@@ -603,6 +699,17 @@
 					"id": "destroy",
 					"objectClass": "obj_boulder",
 					"sid": 180483368202665
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 357821738940918,
+					"parameters": {
+						"audio-file": "boulder_smash",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "set-vector-x",
