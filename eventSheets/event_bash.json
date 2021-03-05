@@ -639,6 +639,15 @@
 					"parameters": {
 						"input": "start-ignoring"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 408434778771148,
+					"parameters": {
+						"animation": "\"Damaged\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 671702010505941
@@ -651,6 +660,15 @@
 					"objectClass": "spr_bashy",
 					"sid": 379217505530321,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_bashy",
+					"sid": 324735759950884,
+					"parameters": {
+						"animation": "\"Damaged\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -661,6 +679,15 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"max-speed": "400"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_bashy",
+					"sid": 377742002770608,
+					"parameters": {
+						"animation": "\"Fall\"",
+						"from": "beginning"
 					}
 				}
 			],
