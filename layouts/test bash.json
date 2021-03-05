@@ -687,47 +687,6 @@
 					}
 				},
 				{
-					"type": "coll_boulderSpawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 74,
-					"instanceVariables": {
-						"maxTimer": 1.3
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 6970,
-						"y": 2481,
-						"width": 223.39999999999998,
-						"height": 141.4,
-						"originX": 0.105,
-						"originY": 0.5975,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "coll_boulderDestroyer",
 					"properties": {
 						"initially-visible": true,
@@ -818,47 +777,6 @@
 						"height": 191.74864987953742,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "coll_boulderSpawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 79,
-					"instanceVariables": {
-						"maxTimer": 2.5
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 9472,
-						"y": 2409,
-						"width": 223.39999999999998,
-						"height": 141.4,
-						"originX": 0.105,
-						"originY": 0.5975,
 						"color": [
 							1,
 							1,
@@ -1837,8 +1755,8 @@
 						}
 					},
 					"world": {
-						"x": 7614,
-						"y": 2387,
+						"x": 7608,
+						"y": 2429,
 						"width": 124,
 						"height": 122,
 						"originX": 0.5,
@@ -1986,12 +1904,12 @@
 						}
 					},
 					"world": {
-						"x": 3612,
-						"y": 2671,
-						"width": 223.39999999999998,
-						"height": 141.4,
-						"originX": 0.105,
-						"originY": 0.5975,
+						"x": 3642,
+						"y": 2681,
+						"width": 99.04066666666665,
+						"height": 116.30150000000003,
+						"originX": -0.08646616541353383,
+						"originY": 0.3799392097264438,
 						"color": [
 							1,
 							1,
@@ -2027,12 +1945,94 @@
 						}
 					},
 					"world": {
-						"x": 5560,
-						"y": 2478,
-						"width": 223.39999999999998,
-						"height": 141.4,
-						"originX": 0.105,
-						"originY": 0.5975,
+						"x": 5590,
+						"y": 2488,
+						"width": 99.04066666666665,
+						"height": 116.30150000000003,
+						"originX": -0.08646616541353383,
+						"originY": 0.3799392097264438,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coll_boulderSpawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 74,
+					"instanceVariables": {
+						"maxTimer": 1.3
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 7002,
+						"y": 2493,
+						"width": 99.04066666666665,
+						"height": 116.30150000000003,
+						"originX": -0.08646616541353383,
+						"originY": 0.3799392097264438,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coll_boulderSpawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"instanceVariables": {
+						"maxTimer": 2.5
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 9490,
+						"y": 2417,
+						"width": 99.04066666666665,
+						"height": 116.30150000000003,
+						"originX": -0.08646616541353383,
+						"originY": 0.3799392097264438,
 						"color": [
 							1,
 							1,

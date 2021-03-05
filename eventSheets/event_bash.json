@@ -683,15 +683,6 @@
 					"parameters": {
 						"object": "spr_bashy"
 					}
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "spr_bashy",
-					"sid": 790393163525396,
-					"parameters": {
-						"animation": "\"Punch\""
-					},
-					"isInverted": true
 				}
 			],
 			"actions": [
@@ -757,7 +748,8 @@
 					}
 				}
 			],
-			"sid": 671702010505941
+			"sid": 671702010505941,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
