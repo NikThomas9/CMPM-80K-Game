@@ -204,6 +204,21 @@
 					"name": "bashy_jump_test.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 116699131561191
+				},
+				{
+					"name": "Reversed_Game_Song.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 392686847176695
+				},
+				{
+					"name": "Bashy_punch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 431350866233131
+				},
+				{
+					"name": "boulder_wall_smash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 210570190394428
 				}
 			],
 			"subfolders": []
