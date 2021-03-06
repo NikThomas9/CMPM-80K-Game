@@ -1,0 +1,44 @@
+{
+	"name": "var_songName",
+	"plugin-id": "Sprite",
+	"sid": 849677644635287,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "SongName",
+			"type": "string",
+			"desc": "",
+			"sid": 766448159004739
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4362838,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 432980904743701,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

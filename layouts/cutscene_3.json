@@ -1,11 +1,11 @@
 {
-	"name": "Cutscene_1",
+	"name": "Cutscene_3",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [],
-			"sid": 563262282458738,
+			"sid": 737642001161528,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -42,7 +42,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 29,
+					"uid": 110,
 					"instanceVariables": {
 						"s": "1",
 						"textString": 18,
@@ -75,7 +75,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 30,
+					"uid": 111,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -104,9 +104,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 106,
+					"uid": 112,
 					"instanceVariables": {
-						"LevelName": "Jumpy"
+						"LevelName": "Dashy"
 					},
 					"behaviors": {},
 					"world": {
@@ -127,7 +127,7 @@
 					}
 				}
 			],
-			"sid": 146660597857145,
+			"sid": 854868801018869,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -152,7 +152,7 @@
 			"global": false
 		}
 	],
-	"sid": 436808846945345,
+	"sid": 270863986661401,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1800,

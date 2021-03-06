@@ -1,5 +1,5 @@
 {
-	"name": "event_cutscene1",
+	"name": "event_Cutscene",
 	"events": [
 		{
 			"eventType": "block",
@@ -83,11 +83,11 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "go-to-layout-by-name",
 					"objectClass": "System",
-					"sid": 548316826065871,
+					"sid": 310292963609820,
 					"parameters": {
-						"layout": "Test Jump"
+						"layout": "var_nextLevel.LevelName"
 					}
 				},
 				{

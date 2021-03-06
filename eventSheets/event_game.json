@@ -1,13 +1,38 @@
 {
-	"name": "event_Bash",
+	"name": "event_Game",
 	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 953015464078872
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "sys_Audio",
+					"sid": 641976088187670,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "var_songName.SongName",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 577777101992010
+		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "key-is-down",
 					"objectClass": "sys_Keyboard",
-					"sid": 897199329498297,
+					"sid": 533341026725555,
 					"parameters": {
 						"key": 37
 					}
@@ -15,7 +40,432 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "sys_Keyboard",
-					"sid": 427034566230279,
+					"sid": 288441975460777,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_jumpy",
+					"sid": 207347857865813
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_jumpy",
+					"sid": 722185014317539,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 418182372205167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "spr_jumpy",
+					"sid": 560825663008777
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 113533716164673,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 153153485504426,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_jumpy",
+					"sid": 316800763221628,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 954092304449888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "spr_jumpy",
+					"sid": 896144005812266,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_jumpy",
+					"sid": 289546267910114,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "spr_jumpy",
+					"sid": 970240930511866,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 4,
+						"speed": "300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 501891206324904,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 423123826116240
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "spr_jumpy",
+					"sid": 125745280436517,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 604860007762724,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 690783210621900
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_jumpy",
+					"sid": 623759545836855,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "spr_jumpy",
+					"sid": 130634506024202,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 254647862283991,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 478674400602447
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "spr_jumpy",
+					"sid": 797922218125080,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 709948599000122,
+					"parameters": {
+						"audio-file": "jumpy_jump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 324136407990412
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "tile_Words",
+					"sid": 470095280187431,
+					"parameters": {
+						"comparison": 0,
+						"y-co-ordinate": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "tile_Words",
+					"sid": 536389108159512,
+					"parameters": {
+						"instance-variable": "StartingPosition",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 823925132900714,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.maxFloatDistance",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 205769023535988,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "10",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 482590860307971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "tile_Words",
+					"sid": 556595806167838,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "Self.MaxFloatDistance"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 975625904072017,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.StartingPosition",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "tile_Words",
+					"sid": 504646447568072,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "-10",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 730386785543407
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "spr_jumpy",
+					"sid": 472524431865320,
+					"parameters": {
+						"object": "coll_LevelEnd"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "sys_Audio",
+					"sid": 882254478636639,
+					"parameters": {
+						"tag": "\"win\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 416004003537307,
+					"parameters": {
+						"layout": "WinScreen"
+					}
+				}
+			],
+			"sid": 165403778805504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "spr_jumpy",
+					"sid": 918372981632390,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 486656237935813,
+					"parameters": {
+						"animation": "\"Fall\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 581593271119568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "spr_jumpy",
+					"sid": 197150089411287,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 101522738389732,
+					"parameters": {
+						"audio-file": "landing_sound1",
+						"loop": "not-looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 576726513094238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "spr_jumpy",
+					"sid": 616300018690164,
+					"parameters": {
+						"object": "coll_Secret"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "sys_Audio",
+					"sid": 539884601428155,
+					"parameters": {
+						"tag": "\"secret\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "spr_virus",
+					"sid": 188819765098523,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 395675315312500,
+					"parameters": {
+						"audio-file": "win",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"secret\""
+					}
+				}
+			],
+			"sid": 497270197840141
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 330304348687825,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 794318132464633,
 					"parameters": {
 						"key": 39
 					},
@@ -24,18 +474,23 @@
 				{
 					"id": "is-animation-playing",
 					"objectClass": "spr_bashy",
-					"sid": 513848098205835,
+					"sid": 449217004589269,
 					"parameters": {
 						"animation": "\"Punch\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 865718113499953
 				}
 			],
 			"actions": [
 				{
 					"id": "set-mirrored",
 					"objectClass": "spr_bashy",
-					"sid": 804771226263312,
+					"sid": 860960727240122,
 					"parameters": {
 						"state": "mirrored"
 					}
@@ -43,14 +498,14 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "spr_bashy",
-					"sid": 509043433965528,
+					"sid": 942371396139655,
 					"parameters": {
 						"instance-variable": "isMirrored",
 						"value": "-1"
 					}
 				}
 			],
-			"sid": 769075085898959
+			"sid": 525543749439859
 		},
 		{
 			"eventType": "block",
@@ -80,6 +535,11 @@
 						"animation": "\"Punch\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 505986702504589
 				}
 			],
 			"actions": [
@@ -127,6 +587,11 @@
 						"comparison": 5,
 						"speed": "300"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 755076683049000
 				}
 			],
 			"actions": [
@@ -166,6 +631,11 @@
 						"animation": "\"Punch\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 574569012081144
 				}
 			],
 			"actions": [
@@ -207,6 +677,11 @@
 					"objectClass": "spr_bashy",
 					"sid": 362397908791763,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 443221278569881
 				}
 			],
 			"actions": [
@@ -215,7 +690,7 @@
 					"objectClass": "sys_Audio",
 					"sid": 574776907122360,
 					"parameters": {
-						"audio-file": "bashy_jump_test",
+						"audio-file": "bashy_jump",
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
@@ -243,6 +718,11 @@
 					"parameters": {
 						"key": 32
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 784659703925218
 				},
 				{
 					"id": "is-on-floor",
@@ -283,6 +763,11 @@
 					"parameters": {
 						"animation": "\"Punch\""
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 763162053035717
 				}
 			],
 			"actions": [
@@ -319,6 +804,11 @@
 					}
 				},
 				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 786670974107730
+				},
+				{
 					"id": "is-animation-playing",
 					"objectClass": "spr_bashy",
 					"sid": 540231328461654,
@@ -338,7 +828,7 @@
 					"objectClass": "sys_Audio",
 					"sid": 835102755924357,
 					"parameters": {
-						"audio-file": "wall_smash",
+						"audio-file": "smash_wall",
 						"loop": "not-looping",
 						"volume": "-5",
 						"tag-optional": "\"\""
@@ -367,6 +857,11 @@
 					}
 				},
 				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 388894527662301
+				},
+				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
 					"sid": 762389490389266,
@@ -387,7 +882,7 @@
 					"objectClass": "sys_Audio",
 					"sid": 380630396126770,
 					"parameters": {
-						"audio-file": "boulder_smash",
+						"audio-file": "smash_boulder",
 						"loop": "not-looping",
 						"volume": "-5",
 						"tag-optional": "\"\""
@@ -431,6 +926,11 @@
 					"parameters": {
 						"animation": "\"Punch\""
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 644871323793363
 				}
 			],
 			"actions": [
@@ -444,7 +944,7 @@
 					"objectClass": "sys_Audio",
 					"sid": 973600964323170,
 					"parameters": {
-						"audio-file": "boulder_smash",
+						"audio-file": "smash_boulder",
 						"loop": "not-looping",
 						"volume": "-5",
 						"tag-optional": "\"\""
@@ -541,6 +1041,11 @@
 						"tag": "\"Punch\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 960015331643516
 				}
 			],
 			"actions": [
@@ -557,7 +1062,7 @@
 					"objectClass": "sys_Audio",
 					"sid": 650706929401165,
 					"parameters": {
-						"audio-file": "whiff_sound_punch",
+						"audio-file": "bashy_punch",
 						"loop": "not-looping",
 						"volume": "-5",
 						"tag-optional": "\"Punch\""
@@ -565,113 +1070,6 @@
 				}
 			],
 			"sid": 674700368793890
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-y",
-					"objectClass": "tile_Words",
-					"sid": 503790474606405,
-					"parameters": {
-						"comparison": 0,
-						"y-co-ordinate": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "tile_Words",
-					"sid": 240394716788133,
-					"parameters": {
-						"instance-variable": "StartingPosition",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "tile_Words",
-					"sid": 845889038409790,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "Self.maxFloatDistance",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "tile_Words",
-					"sid": 545088395722137,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetX",
-						"end-value": "10",
-						"time": "5",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 918978105818846
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-y",
-					"objectClass": "tile_Words",
-					"sid": 939533029165012,
-					"parameters": {
-						"comparison": 3,
-						"y-co-ordinate": "Self.MaxFloatDistance"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "tween-one-property",
-					"objectClass": "tile_Words",
-					"sid": 407194019156144,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "Self.StartingPosition",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "tile_Words",
-					"sid": 963572653967650,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetX",
-						"end-value": "-10",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 886152556701288
 		},
 		{
 			"eventType": "block",
@@ -696,7 +1094,7 @@
 					"objectClass": "sys_Audio",
 					"sid": 357821738940918,
 					"parameters": {
-						"audio-file": "boulder_smash",
+						"audio-file": "smash_boulder",
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
@@ -768,6 +1166,11 @@
 						"animation": "\"Damaged\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_bashy",
+					"sid": 400205048735993
 				}
 			],
 			"actions": [
@@ -812,30 +1215,6 @@
 				}
 			],
 			"sid": 382413030804758
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 387651711476524
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "sys_Audio",
-					"sid": 721408703653811,
-					"parameters": {
-						"audio-file": "Reversed_Game_Song",
-						"loop": "looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 741086888396534
 		}
 	],
 	"sid": 808825524418463

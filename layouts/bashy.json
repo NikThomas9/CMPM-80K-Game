@@ -1,5 +1,5 @@
 {
-	"name": "Test Bash",
+	"name": "Bashy",
 	"layers": [
 		{
 			"name": "Background",
@@ -1715,6 +1715,37 @@
 						"angle": 0.0678575480825403,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "var_songName",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 114,
+					"instanceVariables": {
+						"SongName": "Track 2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 9834,
+						"y": 2711,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 665396885101913,
@@ -2111,5 +2142,5 @@
 	"width": 10000,
 	"height": 3000,
 	"unboundedScrolling": false,
-	"eventSheet": "event_Bash"
+	"eventSheet": "event_Game"
 }

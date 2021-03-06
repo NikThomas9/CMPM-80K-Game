@@ -132,7 +132,9 @@
 			"coll_Secret",
 			"coll_boulderSpawner",
 			"tile_BashyBG",
-			"coll_boulderDestroyer"
+			"coll_boulderDestroyer",
+			"var_nextLevel",
+			"var_songName"
 		],
 		"subfolders": []
 	},
@@ -145,9 +147,11 @@
 	"layouts": {
 		"items": [
 			"Title Screen",
-			"Test Jump",
-			"Test Bash",
+			"Jumpy",
+			"Bashy",
 			"Cutscene_1",
+			"Cutscene_2",
+			"Cutscene_3",
 			"WinScreen",
 			"WinScreenDemo"
 		],
@@ -155,11 +159,10 @@
 	},
 	"eventSheets": {
 		"items": [
-			"event_Jump",
 			"event_Title",
 			"event_Win",
-			"event_Bash",
-			"event_cutscene1"
+			"event_Game",
+			"event_Cutscene"
 		],
 		"subfolders": []
 	},
@@ -171,7 +174,7 @@
 		"sound": {
 			"items": [
 				{
-					"name": "jump.webm",
+					"name": "jumpy_jump.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 844639456814912
 				},
@@ -201,27 +204,27 @@
 					"sid": 232055159365507
 				},
 				{
-					"name": "bashy_jump_test.webm",
+					"name": "bashy_jump.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 116699131561191
 				},
 				{
-					"name": "Reversed_Game_Song.webm",
+					"name": "Track 2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 392686847176695
 				},
 				{
-					"name": "wall_smash.webm",
+					"name": "smash_wall.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 431350866233131
 				},
 				{
-					"name": "boulder_smash.webm",
+					"name": "smash_boulder.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 210570190394428
 				},
 				{
-					"name": "whiff_sound_punch.webm",
+					"name": "bashy_punch.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 244250317185845
 				}
