@@ -1220,6 +1220,16 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 334207323181702,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Dash\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "key-is-down",
 					"objectClass": "sys_Keyboard",
 					"sid": 940216977402743,
@@ -1266,6 +1276,16 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 322343715854345,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Dash\""
+					},
+					"isInverted": true
+				},
 				{
 					"id": "is-visible",
 					"objectClass": "spr_dashy",
@@ -1336,6 +1356,24 @@
 						"animation": "\"Default\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_dashy",
+					"sid": 905621072866061,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "800"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 496906827194240,
+					"parameters": {
+						"instance-variable": "usedDash",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 934577728648747
@@ -1375,6 +1413,24 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_dashy",
+					"sid": 297024446353649,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "800"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 379268932931664,
+					"parameters": {
+						"instance-variable": "usedDash",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 472908347712062
@@ -1385,7 +1441,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "sys_Keyboard",
-					"sid": 787841288366233,
+					"sid": 588516174915471,
 					"parameters": {
 						"key": 32
 					}
@@ -1396,19 +1452,299 @@
 					"sid": 662586057401330,
 					"behaviorType": "Platform",
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "spr_dashy",
+					"sid": 842750672994264,
+					"parameters": {
+						"instance-variable": "usedDash"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "move-forward",
+					"id": "start-timer",
 					"objectClass": "spr_dashy",
-					"sid": 849879219527060,
+					"sid": 431548571610465,
+					"behaviorType": "Timer",
 					"parameters": {
-						"distance": "lerp(Self.X * Self.isMirrored, (Self.X + Self.DashLength) * Self.isMirrored, dt/Self.DashSpeed)"
+						"duration": "0.1",
+						"type": "once",
+						"tag": "\"Dash\""
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 564922549813591,
+					"parameters": {
+						"instance-variable": "usedDash",
+						"value": "true"
 					}
 				}
 			],
 			"sid": 625699483993937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 671029644389211,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Dash\""
+					}
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 193118605752650,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "left"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 119290823087086,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "right"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "spr_dashy",
+					"sid": 238406436626665,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 3,
+						"speed": "1500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 685997683851124,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "0"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_dashy",
+					"sid": 810042813615617,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "spr_dashy",
+					"sid": 701459878072826,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "3"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_dashy",
+					"sid": 878811075375706,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "Self.isMirrored * 1500"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_dashy",
+					"sid": 687606729461354,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "10000"
+					}
+				}
+			],
+			"sid": 583722499117643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 328493551498164
+				}
+			],
+			"actions": [
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 144196126210705,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "3000"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_dashy",
+					"sid": 208716676729379,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "stop-timer",
+					"objectClass": "spr_dashy",
+					"sid": 299858810787360,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Dash\""
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "spr_dashy",
+					"sid": 168309726174487,
+					"behaviorType": "Platform",
+					"parameters": {
+						"acceleration": "1500"
+					}
+				}
+			],
+			"sid": 269214819433451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "sys_Keyboard",
+					"sid": 164190167347597,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 946946901054123,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "left"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 103382796019121,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_dashy",
+					"sid": 821410324986715,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "2500"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "spr_dashy",
+					"sid": 724107959719688,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-750"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_dashy",
+					"sid": 550110183510417,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "1200"
+					}
+				}
+			],
+			"sid": 811202220526472
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "sys_Keyboard",
+					"sid": 747800787776714,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 161848680898824,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "right"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 242516288569912,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_dashy",
+					"sid": 472446295057570,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "-2500"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "spr_dashy",
+					"sid": 746014673061242,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-750"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_dashy",
+					"sid": 135359748961176,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "1200"
+					}
+				}
+			],
+			"sid": 514436381099273
 		}
 	],
 	"sid": 808825524418463

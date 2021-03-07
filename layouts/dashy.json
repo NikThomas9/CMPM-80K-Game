@@ -35,7 +35,7 @@
 							"height": 250,
 							"max-width": 312,
 							"max-height": 250,
-							"data": "235x0,15x14,235x0,15x14,235x0,15x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,69750x0"
+							"data": "235x0,15x14,235x0,15x14,235x0,15x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,245x0,5x14,225x0,14x14,6x0,5x14,225x0,14x14,6x0,5x14,225x0,3x14,17x0,5x14,225x0,3x14,17x0,5x14,225x0,3x14,17x0,5x14,225x0,3x14,17x0,5x14,225x0,3x14,17x0,5x14,225x0,3x14,17x0,5x14,225x0,3x14,6x0,16x14,225x0,3x14,6x0,16x14,225x0,3x14,6x0,16x14,234x0,16x14,2734x0,16x14,234x0,16x14,234x0,16x14,234x0,16x14,234x0,16x14,234x0,16x14,234x0,16x14,234x0,16x14,234x0,16x14,65000x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -57,59 +57,6 @@
 							1,
 							1
 						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spr_dashy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 171,
-					"instanceVariables": {
-						"isMirrored": 1,
-						"DashLength": 0,
-						"DashSpeed": 0
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": -395,
-						"y": 7653,
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -154,8 +101,7 @@
 					"uid": 172,
 					"instanceVariables": {
 						"isMirrored": 1,
-						"DashLength": 50,
-						"DashSpeed": 1
+						"usedDash": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -164,9 +110,9 @@
 								"acceleration": 1500,
 								"deceleration": 5000,
 								"jump-strength": 750,
-								"gravity": 3000,
+								"gravity": 2500,
 								"max-fall-speed": 1000,
-								"double-jump": true,
+								"double-jump": false,
 								"jump-sustain": 0,
 								"default-controls": true,
 								"enabled": true
@@ -176,6 +122,9 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Timer": {
+							"properties": {}
 						}
 					},
 					"world": {
