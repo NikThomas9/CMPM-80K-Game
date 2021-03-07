@@ -1382,6 +1382,52 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-jumping",
+					"objectClass": "spr_dashy",
+					"sid": 822266293217630,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 792233305037158,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 501901485718272
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "spr_dashy",
+					"sid": 864128423591100,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 152504201798164,
+					"parameters": {
+						"animation": "\"Fall\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 406999804235584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-moving",
 					"objectClass": "spr_dashy",
 					"sid": 984186081239763,
@@ -1467,10 +1513,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "spr_dashy",
-					"sid": 431548571610465,
+					"sid": 269128598223949,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "0.1",
+						"duration": "0.3",
 						"type": "once",
 						"tag": "\"Dash\""
 					}
@@ -1532,6 +1578,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 697715757499103,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-gravity",
 					"objectClass": "spr_dashy",
 					"sid": 685997683851124,
@@ -1561,10 +1616,10 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_dashy",
-					"sid": 878811075375706,
+					"sid": 498956492359773,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "Self.isMirrored * 1500"
+						"vector-x": "Self.isMirrored * 800"
 					}
 				},
 				{
@@ -1592,10 +1647,10 @@
 				{
 					"id": "set-gravity",
 					"objectClass": "spr_dashy",
-					"sid": 144196126210705,
+					"sid": 971995209427056,
 					"behaviorType": "Platform",
 					"parameters": {
-						"gravity": "3000"
+						"gravity": "2700"
 					}
 				},
 				{
@@ -1614,15 +1669,6 @@
 					"behaviorType": "Timer",
 					"parameters": {
 						"tag": "\"Dash\""
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "spr_dashy",
-					"sid": 168309726174487,
-					"behaviorType": "Platform",
-					"parameters": {
-						"acceleration": "1500"
 					}
 				}
 			],
@@ -1660,28 +1706,28 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_dashy",
-					"sid": 821410324986715,
+					"sid": 963988293468648,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "2500"
+						"vector-x": "2600"
 					}
 				},
 				{
 					"id": "set-vector-y",
 					"objectClass": "spr_dashy",
-					"sid": 724107959719688,
+					"sid": 601419438379453,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-y": "-750"
+						"vector-y": "-700"
 					}
 				},
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 550110183510417,
+					"sid": 877095369388159,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "1200"
+						"max-speed": "1000"
 					}
 				}
 			],
@@ -1719,28 +1765,28 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_dashy",
-					"sid": 472446295057570,
+					"sid": 204764032178559,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "-2500"
+						"vector-x": "-2600"
 					}
 				},
 				{
 					"id": "set-vector-y",
 					"objectClass": "spr_dashy",
-					"sid": 746014673061242,
+					"sid": 502397078903875,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-y": "-750"
+						"vector-y": "-700"
 					}
 				},
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 135359748961176,
+					"sid": 577847212357699,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "1200"
+						"max-speed": "1000"
 					}
 				}
 			],

@@ -1,52 +1,5 @@
 {
 	"name": "TODO",
-	"events": [
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-jumping",
-					"objectClass": "spr_dashy",
-					"sid": 822266293217630,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "spr_dashy",
-					"sid": 792233305037158,
-					"parameters": {
-						"animation": "\"Jump\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 501901485718272
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-falling",
-					"objectClass": "spr_dashy",
-					"sid": 864128423591100,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "spr_dashy",
-					"sid": 152504201798164,
-					"parameters": {
-						"animation": "\"Fall\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 406999804235584
-		}
-	],
+	"events": [],
 	"sid": 374572354020759
 }
