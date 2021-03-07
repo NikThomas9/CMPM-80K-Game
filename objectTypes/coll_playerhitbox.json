@@ -1,10 +1,16 @@
 {
-	"name": "Sprite",
+	"name": "coll_playerHitbox",
 	"plugin-id": "Sprite",
 	"sid": 684047909828288,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 704713321801129
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

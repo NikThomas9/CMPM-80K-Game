@@ -129,10 +129,45 @@
 						}
 					},
 					"world": {
-						"x": 241,
-						"y": 7774,
+						"x": 245,
+						"y": 7780,
 						"width": 128,
 						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coll_playerHitbox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 242,
+						"y": 7805,
+						"width": 68.55167827981467,
+						"height": 68.55167827981467,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -330,39 +330,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "spr_jumpy",
-					"sid": 472524431865320,
-					"parameters": {
-						"object": "coll_LevelEnd"
-					}
-				},
-				{
-					"id": "is-tag-playing",
-					"objectClass": "sys_Audio",
-					"sid": 882254478636639,
-					"parameters": {
-						"tag": "\"win\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 416004003537307,
-					"parameters": {
-						"layout": "WinScreen"
-					}
-				}
-			],
-			"sid": 165403778805504
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "is-falling",
 					"objectClass": "spr_jumpy",
 					"sid": 918372981632390,
@@ -1867,6 +1834,105 @@
 				}
 			],
 			"sid": 514436381099273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "spr_jumpy",
+					"sid": 472524431865320,
+					"parameters": {
+						"object": "coll_LevelEnd"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "sys_Audio",
+					"sid": 882254478636639,
+					"parameters": {
+						"tag": "\"win\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 468729698896590,
+					"parameters": {
+						"layout": "var_nextLevel.LevelName"
+					}
+				}
+			],
+			"sid": 165403778805504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "spr_bashy",
+					"sid": 727998787562837,
+					"parameters": {
+						"object": "coll_LevelEnd"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "sys_Audio",
+					"sid": 698183328056533,
+					"parameters": {
+						"tag": "\"win\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 909898728363448,
+					"parameters": {
+						"layout": "var_nextLevel.LevelName"
+					}
+				}
+			],
+			"sid": 341675695813667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "spr_dashy",
+					"sid": 509763661283965,
+					"parameters": {
+						"object": "coll_LevelEnd"
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "sys_Audio",
+					"sid": 260307005921054,
+					"parameters": {
+						"tag": "\"win\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 351263204021491,
+					"parameters": {
+						"layout": "var_nextLevel.LevelName"
+					}
+				}
+			],
+			"sid": 167105545911824
 		}
 	],
 	"sid": 808825524418463

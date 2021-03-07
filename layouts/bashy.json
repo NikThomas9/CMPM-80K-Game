@@ -1869,6 +1869,66 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "coll_LevelEnd",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 116,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 9994,
+						"y": 2432,
+						"width": 167.41746403313232,
+						"height": 690,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "var_nextLevel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 117,
+					"instanceVariables": {
+						"LevelName": "Cutscene_3"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 9902,
+						"y": 2751,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 665396885101913,
@@ -1946,8 +2006,8 @@
 						}
 					},
 					"world": {
-						"x": 7608,
-						"y": 2432,
+						"x": 9607,
+						"y": 2332,
 						"width": 124,
 						"height": 122,
 						"originX": 0.5,
