@@ -134,7 +134,8 @@
 			"tile_BashyBG",
 			"coll_boulderDestroyer",
 			"var_nextLevel",
-			"var_songName"
+			"var_songName",
+			"Sprite"
 		],
 		"subfolders": []
 	},
