@@ -907,7 +907,7 @@
 					"objectClass": "spr_bashy",
 					"sid": 486445929824867,
 					"parameters": {
-						"object": "coll_boulderSpawner"
+						"object": "obj_sadMask"
 					}
 				},
 				{
@@ -936,7 +936,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "coll_boulderSpawner",
+					"objectClass": "obj_sadMask",
 					"sid": 119980972289640
 				},
 				{
@@ -966,14 +966,14 @@
 			"conditions": [
 				{
 					"id": "on-created",
-					"objectClass": "coll_boulderSpawner",
+					"objectClass": "obj_sadMask",
 					"sid": 216087349972644
 				}
 			],
 			"actions": [
 				{
 					"id": "start-timer",
-					"objectClass": "coll_boulderSpawner",
+					"objectClass": "obj_sadMask",
 					"sid": 110832024526656,
 					"behaviorType": "Timer",
 					"parameters": {
@@ -990,7 +990,7 @@
 			"conditions": [
 				{
 					"id": "on-timer",
-					"objectClass": "coll_boulderSpawner",
+					"objectClass": "obj_sadMask",
 					"sid": 884603644360450,
 					"behaviorType": "Timer",
 					"parameters": {
@@ -1001,7 +1001,7 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "coll_boulderSpawner",
+					"objectClass": "obj_sadMask",
 					"sid": 804804516159112,
 					"parameters": {
 						"object": "obj_boulder",
@@ -1052,9 +1052,9 @@
 				{
 					"id": "move-forward",
 					"objectClass": "spr_bashy",
-					"sid": 959951953786488,
+					"sid": 258830650668231,
 					"parameters": {
-						"distance": "Self.isMirrored * 5"
+						"distance": "Self.isMirrored * Self.punchDistance"
 					}
 				},
 				{
@@ -1215,6 +1215,200 @@
 				}
 			],
 			"sid": 382413030804758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 940216977402743,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 632126261664651,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "spr_dashy",
+					"sid": 354267665372090
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 655398117239417,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_dashy",
+					"sid": 319875577797499,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 471676627559066
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "spr_dashy",
+					"sid": 168403663459044
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 323959343963132,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 365067821944795,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 575694780479227,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_dashy",
+					"sid": 357059505168233,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 428986073461694
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 190511139446569,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "spr_dashy",
+					"sid": 644207990844301,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 800077308764211,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 934577728648747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "spr_dashy",
+					"sid": 984186081239763,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 459567176791685,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "spr_dashy",
+					"sid": 916224902037671,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 4,
+						"speed": "300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 903290674798017,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 472908347712062
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "sys_Keyboard",
+					"sid": 787841288366233,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 662586057401330,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "spr_dashy",
+					"sid": 849879219527060,
+					"parameters": {
+						"distance": "lerp(Self.X * Self.isMirrored, (Self.X + Self.DashLength) * Self.isMirrored, dt/Self.DashSpeed)"
+					}
+				}
+			],
+			"sid": 625699483993937
 		}
 	],
 	"sid": 808825524418463

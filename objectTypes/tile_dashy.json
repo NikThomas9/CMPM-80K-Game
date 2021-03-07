@@ -1,0 +1,27 @@
+{
+	"name": "tile_Dashy",
+	"plugin-id": "Tilemap",
+	"sid": 234383856884616,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 911842742025355
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 384,
+		"height": 384,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6334875,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

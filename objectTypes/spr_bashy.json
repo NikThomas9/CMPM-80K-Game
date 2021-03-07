@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 756621013790856
+		},
+		{
+			"name": "punchDistance",
+			"type": "number",
+			"desc": "",
+			"sid": 528109239854604
 		}
 	],
 	"behaviorTypes": [

@@ -130,12 +130,15 @@
 			"obj_boulder",
 			"spr_virus",
 			"coll_Secret",
-			"coll_boulderSpawner",
+			"obj_sadMask",
 			"tile_BashyBG",
 			"coll_boulderDestroyer",
 			"var_nextLevel",
 			"var_songName",
-			"Sprite"
+			"Sprite",
+			"tile_DashyBG",
+			"tile_Dashy",
+			"spr_dashy"
 		],
 		"subfolders": []
 	},
@@ -150,6 +153,7 @@
 			"Title Screen",
 			"Jumpy",
 			"Bashy",
+			"Dashy",
 			"Cutscene_1",
 			"Cutscene_2",
 			"Cutscene_3",
@@ -163,7 +167,8 @@
 			"event_Title",
 			"event_Win",
 			"event_Game",
-			"event_Cutscene"
+			"event_Cutscene",
+			"TODO"
 		],
 		"subfolders": []
 	},
