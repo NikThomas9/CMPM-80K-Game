@@ -1358,6 +1358,15 @@
 					}
 				},
 				{
+					"id": "stop-timer",
+					"objectClass": "spr_dashy",
+					"sid": 509238282408031,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					}
+				},
+				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
 					"sid": 905621072866061,
@@ -1397,6 +1406,15 @@
 						"animation": "\"Jump\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "stop-timer",
+					"objectClass": "spr_dashy",
+					"sid": 540564749949511,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					}
 				}
 			],
 			"sid": 501901485718272
@@ -1419,6 +1437,15 @@
 					"parameters": {
 						"animation": "\"Fall\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "stop-timer",
+					"objectClass": "spr_dashy",
+					"sid": 979616723814534,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
 					}
 				}
 			],
@@ -1678,60 +1705,65 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "sys_Keyboard",
-					"sid": 164190167347597,
-					"parameters": {
-						"key": 38
-					}
-				},
-				{
-					"id": "is-by-wall",
-					"objectClass": "spr_dashy",
-					"sid": 946946901054123,
-					"behaviorType": "Platform",
-					"parameters": {
-						"side": "left"
-					}
-				},
-				{
 					"id": "is-on-floor",
 					"objectClass": "spr_dashy",
-					"sid": 103382796019121,
+					"sid": 242516288569912,
 					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 915903128378808,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					},
 					"isInverted": true
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 514436381099273,
+			"children": [
 				{
-					"id": "set-vector-x",
-					"objectClass": "spr_dashy",
-					"sid": 963988293468648,
-					"behaviorType": "Platform",
-					"parameters": {
-						"vector-x": "2600"
-					}
-				},
-				{
-					"id": "set-vector-y",
-					"objectClass": "spr_dashy",
-					"sid": 601419438379453,
-					"behaviorType": "Platform",
-					"parameters": {
-						"vector-y": "-700"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "spr_dashy",
-					"sid": 877095369388159,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "1000"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "spr_dashy",
+							"sid": 777191988102409,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "right"
+							}
+						},
+						{
+							"id": "is-by-wall",
+							"objectClass": "spr_dashy",
+							"sid": 385930483946029,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "spr_dashy",
+							"sid": 111913147368222,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "1.0",
+								"type": "once",
+								"tag": "\"WallJump\""
+							}
+						}
+					],
+					"sid": 303507877531413,
+					"isOrBlock": true
 				}
-			],
-			"sid": 811202220526472
+			]
 		},
 		{
 			"eventType": "block",
@@ -1739,42 +1771,35 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "sys_Keyboard",
-					"sid": 747800787776714,
+					"sid": 412960560490683,
 					"parameters": {
 						"key": 38
 					}
 				},
 				{
-					"id": "is-by-wall",
+					"id": "is-timer-running",
 					"objectClass": "spr_dashy",
-					"sid": 161848680898824,
-					"behaviorType": "Platform",
+					"sid": 972501427073285,
+					"behaviorType": "Timer",
 					"parameters": {
-						"side": "right"
+						"tag": "\"WallJump\""
 					}
-				},
-				{
-					"id": "is-on-floor",
-					"objectClass": "spr_dashy",
-					"sid": 242516288569912,
-					"behaviorType": "Platform",
-					"isInverted": true
 				}
 			],
 			"actions": [
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_dashy",
-					"sid": 204764032178559,
+					"sid": 734054843034144,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "-2600"
+						"vector-x": "3500 * Self.isMirrored * (-1)"
 					}
 				},
 				{
 					"id": "set-vector-y",
 					"objectClass": "spr_dashy",
-					"sid": 502397078903875,
+					"sid": 823111924492314,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-y": "-700"
@@ -1783,14 +1808,94 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 577847212357699,
+					"sid": 171615506809486,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "1000"
+						"max-speed": "1500"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 624360762641835,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "2700"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_dashy",
+					"sid": 367258095098631,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "stop-timer",
+					"objectClass": "spr_dashy",
+					"sid": 516500844365632,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
 					}
 				}
 			],
-			"sid": 514436381099273
+			"sid": 762775977193477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 620385021418223,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 548639947164374,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 475610593493670,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 611876172336866,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "0"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "spr_dashy",
+					"sid": 555709401157011,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "0"
+					}
+				}
+			],
+			"sid": 233019860417569
 		}
 	],
 	"sid": 808825524418463

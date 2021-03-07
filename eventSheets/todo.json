@@ -1,5 +1,35 @@
 {
 	"name": "TODO",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "sys_Keyboard",
+					"sid": 747800787776714,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-flipped",
+					"objectClass": "obj_cloud",
+					"sid": 714049382439441
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-speed",
+					"objectClass": "obj_pog",
+					"sid": 789611119392195,
+					"parameters": {
+						"speed": "0"
+					}
+				}
+			],
+			"sid": 229071633715382
+		}
+	],
 	"sid": 374572354020759
 }

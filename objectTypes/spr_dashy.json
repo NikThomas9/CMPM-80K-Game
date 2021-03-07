@@ -15,6 +15,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 955499562099060
+		},
+		{
+			"name": "onWall",
+			"type": "boolean",
+			"desc": "",
+			"sid": 851551309806908
 		}
 	],
 	"behaviorTypes": [
