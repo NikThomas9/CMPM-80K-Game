@@ -1700,6 +1700,16 @@
 					"sid": 103382796019121,
 					"behaviorType": "Platform",
 					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 427275169024047,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1724,10 +1734,38 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 877095369388159,
+					"sid": 778887973728694,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "1000"
+						"max-speed": "Self.maxWallJumpSpeed"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 727926828588292,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_dashy",
+					"sid": 662642886111806,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "1"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "spr_dashy",
+					"sid": 987232501705893,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.1",
+						"type": "once",
+						"tag": "\"WallJump\""
 					}
 				}
 			],
@@ -1759,6 +1797,16 @@
 					"sid": 242516288569912,
 					"behaviorType": "Platform",
 					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 991960725493058,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1783,10 +1831,38 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 577847212357699,
+					"sid": 690684512424414,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "1000"
+						"max-speed": "Self.maxWallJumpSpeed"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 528975771711311,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_dashy",
+					"sid": 313624998751214,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "spr_dashy",
+					"sid": 367736049081522,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.1",
+						"type": "once",
+						"tag": "\"WallJump\""
 					}
 				}
 			],
