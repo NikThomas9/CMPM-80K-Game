@@ -359,19 +359,7 @@
 					"behaviorType": "Platform"
 				}
 			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "sys_Audio",
-					"sid": 101522738389732,
-					"parameters": {
-						"audio-file": "landing_sound1",
-						"loop": "not-looping",
-						"volume": "-15",
-						"tag-optional": "\"\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 576726513094238
 		},
 		{
