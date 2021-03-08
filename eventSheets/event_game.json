@@ -558,6 +558,15 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_bashy",
+					"sid": 175513492626766,
+					"parameters": {
+						"instance-variable": "punchArmor",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 134040195352824
@@ -620,6 +629,15 @@
 					"parameters": {
 						"input": "stop-ignoring"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_bashy",
+					"sid": 996208612334034,
+					"parameters": {
+						"instance-variable": "punchArmor",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 738961029508473
@@ -658,6 +676,15 @@
 					"parameters": {
 						"animation": "\"Jump\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_bashy",
+					"sid": 371386948740417,
+					"parameters": {
+						"instance-variable": "punchArmor",
+						"value": "false"
 					}
 				}
 			],
@@ -752,10 +779,10 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 385031700371724,
+					"sid": 116246204919693,
 					"parameters": {
-						"comparison": 4,
-						"number": "1"
+						"comparison": 5,
+						"number": "3"
 					}
 				},
 				{
@@ -819,11 +846,17 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 762389490389266,
+					"sid": 255404173045635,
 					"parameters": {
-						"comparison": 4,
-						"number": "1"
+						"comparison": 5,
+						"number": "2"
 					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "spr_bashy",
+					"sid": 385094982460386,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -850,6 +883,15 @@
 					"parameters": {
 						"tag": "\"Punch\""
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_bashy",
+					"sid": 181980601782899,
+					"parameters": {
+						"instance-variable": "punchArmor",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 265770302870331
@@ -868,10 +910,10 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 933382167985069,
+					"sid": 838565000275031,
 					"parameters": {
-						"comparison": 4,
-						"number": "1"
+						"comparison": 5,
+						"number": "3"
 					}
 				},
 				{
@@ -974,7 +1016,7 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 105893731386736,
+					"sid": 348557636968708,
 					"parameters": {
 						"comparison": 0,
 						"number": "3"
@@ -1030,12 +1072,23 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
+					"id": "is-overlapping-at-offset",
 					"objectClass": "obj_boulder",
-					"sid": 207106966018997,
+					"sid": 458820146238096,
 					"parameters": {
-						"object": "spr_bashy"
+						"object": "spr_bashy",
+						"offset-x": "10",
+						"offset-y": "0"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "spr_bashy",
+					"sid": 880925280675074,
+					"parameters": {
+						"instance-variable": "punchArmor"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1101,8 +1154,7 @@
 					}
 				}
 			],
-			"sid": 671702010505941,
-			"isOrBlock": true
+			"sid": 671702010505941
 		},
 		{
 			"eventType": "block",
