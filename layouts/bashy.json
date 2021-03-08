@@ -601,6 +601,35 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "text_tutorialPrompt2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 545,
+						"y": 2764,
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 665396885101913,
@@ -679,8 +708,8 @@
 						}
 					},
 					"world": {
-						"x": 124,
-						"y": 2528,
+						"x": 9725,
+						"y": 2390,
 						"width": 124,
 						"height": 122,
 						"originX": 0.5,

@@ -172,7 +172,7 @@
 					}
 				},
 				{
-					"type": "text_jumpyTutorial",
+					"type": "text_tutorialPrompt1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1439,10 +1439,10 @@
 						}
 					},
 					"world": {
-						"x": 144,
-						"y": 2845,
+						"x": 155,
+						"y": 2863,
 						"width": 72,
-						"height": 90,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

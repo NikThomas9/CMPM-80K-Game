@@ -14,13 +14,13 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "sys_Audio",
-					"sid": 664384244086847,
+					"sid": 570940124479213,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "var_songName.SongName",
 						"loop": "looping",
 						"volume": "0",
-						"tag-optional": "\"\""
+						"tag-optional": "\"BGM\""
 					}
 				}
 			],
@@ -106,6 +106,40 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-jump",
+					"objectClass": "spr_jumpy",
+					"sid": 828613513611806,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "spr_jumpy",
+					"sid": 196409009004273,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 958482804621659,
+					"parameters": {
+						"audio-file": "jumpy_jump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 962033701574730
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-moving",
 					"objectClass": "spr_jumpy",
 					"sid": 896144005812266,
@@ -145,29 +179,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-jumping",
-					"objectClass": "spr_jumpy",
-					"sid": 125745280436517,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "spr_jumpy",
-					"sid": 604860007762724,
-					"parameters": {
-						"animation": "\"Jump\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 690783210621900
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "is-on-floor",
 					"objectClass": "spr_jumpy",
 					"sid": 623759545836855,
@@ -193,31 +204,6 @@
 				}
 			],
 			"sid": 478674400602447
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-jump",
-					"objectClass": "spr_jumpy",
-					"sid": 797922218125080,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "sys_Audio",
-					"sid": 709948599000122,
-					"parameters": {
-						"audio-file": "jumpy_jump",
-						"loop": "not-looping",
-						"volume": "-10",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 324136407990412
 		},
 		{
 			"eventType": "block",
@@ -348,19 +334,6 @@
 				}
 			],
 			"sid": 581593271119568
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-landed",
-					"objectClass": "spr_jumpy",
-					"sid": 197150089411287,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [],
-			"sid": 576726513094238
 		},
 		{
 			"eventType": "block",
@@ -1237,6 +1210,16 @@
 					"isInverted": true
 				},
 				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 141659864550042,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "key-is-down",
 					"objectClass": "sys_Keyboard",
 					"sid": 940216977402743,
@@ -1257,6 +1240,12 @@
 					"id": "is-visible",
 					"objectClass": "spr_dashy",
 					"sid": 354267665372090
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "spr_dashy",
+					"sid": 129749738657613,
+					"behaviorType": "Platform"
 				}
 			],
 			"actions": [
@@ -1290,6 +1279,16 @@
 					"behaviorType": "Timer",
 					"parameters": {
 						"tag": "\"Dash\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 386128312350820,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
 					},
 					"isInverted": true
 				},
@@ -1389,9 +1388,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-jumping",
+					"id": "on-jump",
 					"objectClass": "spr_dashy",
-					"sid": 822266293217630,
+					"sid": 154352795254271,
 					"behaviorType": "Platform"
 				}
 			],
@@ -1403,6 +1402,17 @@
 					"parameters": {
 						"animation": "\"Jump\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 228895036795460,
+					"parameters": {
+						"audio-file": "jumpy_jump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1507,6 +1517,26 @@
 					"isInverted": true
 				},
 				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 165478749590316,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "right"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 168949704593593,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "left"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "is-boolean-instance-variable-set",
 					"objectClass": "spr_dashy",
 					"sid": 842750672994264,
@@ -1520,10 +1550,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "spr_dashy",
-					"sid": 269128598223949,
+					"sid": 213801255569278,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "0.3",
+						"duration": "0.2",
 						"type": "once",
 						"tag": "\"Dash\""
 					}
@@ -1535,6 +1565,17 @@
 					"parameters": {
 						"instance-variable": "usedDash",
 						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 572605458331388,
+					"parameters": {
+						"audio-file": "dashy_dash",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1623,10 +1664,10 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_dashy",
-					"sid": 498956492359773,
+					"sid": 118805524912478,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "Self.isMirrored * 800"
+						"vector-x": "Self.isMirrored * 1200"
 					}
 				},
 				{
@@ -1640,46 +1681,6 @@
 				}
 			],
 			"sid": 583722499117643
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 328493551498164
-				}
-			],
-			"actions": [
-				{
-					"id": "set-gravity",
-					"objectClass": "spr_dashy",
-					"sid": 971995209427056,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "2700"
-					}
-				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "spr_dashy",
-					"sid": 208716676729379,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "stop-ignoring"
-					}
-				},
-				{
-					"id": "stop-timer",
-					"objectClass": "spr_dashy",
-					"sid": 299858810787360,
-					"behaviorType": "Timer",
-					"parameters": {
-						"tag": "\"Dash\""
-					}
-				}
-			],
-			"sid": 269214819433451
 		},
 		{
 			"eventType": "block",
@@ -1711,22 +1712,53 @@
 				{
 					"id": "is-timer-running",
 					"objectClass": "spr_dashy",
-					"sid": 427275169024047,
+					"sid": 772822348341985,
 					"behaviorType": "Timer",
 					"parameters": {
-						"tag": "\"WallJump\""
+						"tag": "\"WallJumpDelay\""
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-vector-x",
+					"id": "set-ignoring-input",
 					"objectClass": "spr_dashy",
-					"sid": 963988293468648,
+					"sid": 994475193580614,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "2600"
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "spr_dashy",
+					"sid": 487841125967802,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.3",
+						"type": "once",
+						"tag": "\"WallJump\""
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "spr_dashy",
+					"sid": 886190478140476,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.1",
+						"type": "once",
+						"tag": "\"WallJumpDelay\""
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_dashy",
+					"sid": 835971441655452,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "Self.maxWallJumpSpeed"
 					}
 				},
 				{
@@ -1741,10 +1773,10 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 778887973728694,
+					"sid": 118818116408735,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "Self.maxWallJumpSpeed"
+						"max-speed": "10000"
 					}
 				},
 				{
@@ -1765,14 +1797,23 @@
 					}
 				},
 				{
-					"id": "start-timer",
-					"objectClass": "spr_dashy",
-					"sid": 987232501705893,
-					"behaviorType": "Timer",
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 279663338506394,
 					"parameters": {
-						"duration": "0.1",
-						"type": "once",
-						"tag": "\"WallJump\""
+						"audio-file": "dashy_walljump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 525048364002057,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1808,22 +1849,53 @@
 				{
 					"id": "is-timer-running",
 					"objectClass": "spr_dashy",
-					"sid": 991960725493058,
+					"sid": 697798464807159,
 					"behaviorType": "Timer",
 					"parameters": {
-						"tag": "\"WallJump\""
+						"tag": "\"WallJumpDelay\""
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-vector-x",
+					"id": "set-ignoring-input",
 					"objectClass": "spr_dashy",
-					"sid": 204764032178559,
+					"sid": 455189107330897,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "-2600"
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "spr_dashy",
+					"sid": 128153265228976,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.3",
+						"type": "once",
+						"tag": "\"WallJump\""
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "spr_dashy",
+					"sid": 558482402612644,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.1",
+						"type": "once",
+						"tag": "\"WallJumpDelay\""
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "spr_dashy",
+					"sid": 790422336260333,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "-(Self.maxWallJumpSpeed)"
 					}
 				},
 				{
@@ -1838,10 +1910,10 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "spr_dashy",
-					"sid": 690684512424414,
+					"sid": 663296182911593,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-speed": "Self.maxWallJumpSpeed"
+						"max-speed": "10000"
 					}
 				},
 				{
@@ -1862,14 +1934,23 @@
 					}
 				},
 				{
-					"id": "start-timer",
-					"objectClass": "spr_dashy",
-					"sid": 367736049081522,
-					"behaviorType": "Timer",
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 111717301316772,
 					"parameters": {
-						"duration": "0.1",
-						"type": "once",
-						"tag": "\"WallJump\""
+						"audio-file": "dashy_walljump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 201975094535545,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1904,6 +1985,14 @@
 					"parameters": {
 						"layout": "var_nextLevel.LevelName"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "sys_Audio",
+					"sid": 916946054897885,
+					"parameters": {
+						"tag": "\"BGM\""
+					}
 				}
 			],
 			"sid": 165403778805504
@@ -1936,6 +2025,14 @@
 					"sid": 909898728363448,
 					"parameters": {
 						"layout": "var_nextLevel.LevelName"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "sys_Audio",
+					"sid": 566611030942025,
+					"parameters": {
+						"tag": "\"BGM\""
 					}
 				}
 			],
@@ -1970,9 +2067,117 @@
 					"parameters": {
 						"layout": "var_nextLevel.LevelName"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "sys_Audio",
+					"sid": 757411290171127,
+					"parameters": {
+						"tag": "\"BGM\""
+					}
 				}
 			],
 			"sid": 167105545911824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 274033813209695,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Dash\""
+					}
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 175506924229111,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_dashy",
+					"sid": 904935630550689,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "spr_dashy",
+					"sid": 384356966703858,
+					"behaviorType": "Platform",
+					"parameters": {
+						"deceleration": "300"
+					}
+				}
+			],
+			"sid": 570292960331294,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 273178539064286,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Dash\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "spr_dashy",
+					"sid": 730856437567280,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"WallJump\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_dashy",
+					"sid": 218761120466059,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 971995209427056,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "2700"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "spr_dashy",
+					"sid": 320237216193045,
+					"behaviorType": "Platform",
+					"parameters": {
+						"deceleration": "5000"
+					}
+				}
+			],
+			"sid": 398495330198017
 		}
 	],
 	"sid": 808825524418463

@@ -108,6 +108,30 @@
 				}
 			],
 			"sid": 707312651836144
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 415796202912101
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "sys_Audio",
+					"sid": 886061576381302,
+					"parameters": {
+						"audio-file": "CutsceneBGM",
+						"loop": "looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 713128679516232
 		}
 	],
 	"sid": 753301914129641

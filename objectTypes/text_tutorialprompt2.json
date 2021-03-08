@@ -1,0 +1,121 @@
+{
+	"name": "text_tutorialPrompt2",
+	"plugin-id": "Sprite",
+	"sid": 937926803364831,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5145592,
+						"collisionPoly": {
+							"points": [
+								0.46,
+								0.46,
+								0.5,
+								0.47333333333333333,
+								0.53,
+								0.4666666666666667,
+								0.79,
+								0.5,
+								0.6633333333333333,
+								0.6633333333333333,
+								0.5,
+								0.6633333333333333,
+								0.5,
+								0.49666666666666665,
+								0.13333333333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9989158,
+						"collisionPoly": {
+							"points": [
+								0.4666666666666667,
+								0.4666666666666667,
+								0.5,
+								0.48,
+								0.5233333333333333,
+								0.47333333333333333,
+								0.7966666666666666,
+								0.5,
+								0.6366666666666667,
+								0.6366666666666667,
+								0.5,
+								0.6566666666666666,
+								0.5,
+								0.49666666666666665,
+								0.14,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8963885,
+						"collisionPoly": {
+							"points": [
+								0.4666666666666667,
+								0.4666666666666667,
+								0.5,
+								0.47333333333333333,
+								0.5233333333333333,
+								0.47333333333333333,
+								0.79,
+								0.5,
+								0.6366666666666667,
+								0.6366666666666667,
+								0.5,
+								0.6566666666666666,
+								0.5,
+								0.49666666666666665,
+								0.14,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 419687456231832,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}

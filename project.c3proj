@@ -122,7 +122,7 @@
 			"obj_flag",
 			"spr_blob",
 			"obj_cloud",
-			"text_jumpyTutorial",
+			"text_tutorialPrompt1",
 			"obj_arrow",
 			"obj_pog",
 			"spr_bashy",
@@ -149,7 +149,10 @@
 			"spr_dashy",
 			"tile_Rain",
 			"obj_cloudDark",
-			"coll_punchHitbox"
+			"coll_punchHitbox",
+			"text_tutorialprompt4",
+			"text_tutorialprompt3",
+			"text_tutorialPrompt2"
 		],
 		"subfolders": []
 	},
@@ -239,6 +242,21 @@
 					"name": "Track 2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 797320220417076
+				},
+				{
+					"name": "CutsceneBGM.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 809004974292457
+				},
+				{
+					"name": "dashy_dash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 955415584337262
+				},
+				{
+					"name": "dashy_walljump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 970075492347561
 				}
 			],
 			"subfolders": []
