@@ -109,14 +109,6 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
 		}
 	],
 	"uniqueId": "zpkhj1a102o",
@@ -147,16 +139,13 @@
 			"spr_virus",
 			"coll_Secret",
 			"obj_sadMask",
-			"tile_BashyBG",
 			"coll_boulderDestroyer",
 			"var_nextLevel",
 			"var_songName",
-			"coll_playerHitbox",
 			"tile_Dashy",
 			"spr_dashy",
 			"tile_Rain",
 			"obj_cloudDark",
-			"coll_punchHitbox",
 			"text_tutorialprompt4",
 			"text_tutorialprompt3",
 			"text_tutorialPrompt2",
@@ -168,7 +157,8 @@
 			"part_wall",
 			"part_wallEmitter",
 			"part_boulder",
-			"part_boulderEmitter"
+			"part_boulderEmitter",
+			"tile_BashyBG"
 		],
 		"subfolders": []
 	},

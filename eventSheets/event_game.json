@@ -792,10 +792,10 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "obj_wall",
-					"sid": 704617689924575,
+					"sid": 437422530983734,
 					"parameters": {
 						"object": "part_wallEmitter",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false
 					}
@@ -880,10 +880,10 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "obj_boulder",
-					"sid": 592757968230168,
+					"sid": 749598491975225,
 					"parameters": {
 						"object": "part_boulderEmitter",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false
 					}
@@ -1011,10 +1011,10 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "obj_sadMask",
-					"sid": 804804516159112,
+					"sid": 608533345961462,
 					"parameters": {
 						"object": "obj_boulder",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "10",
 						"create-hierarchy": false
 					}
@@ -1168,10 +1168,10 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "obj_boulder",
-					"sid": 309114284776828,
+					"sid": 516147661518118,
 					"parameters": {
 						"object": "part_boulderEmitter",
-						"layer": "0",
+						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false
 					}
