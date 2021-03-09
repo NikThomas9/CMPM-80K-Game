@@ -176,8 +176,8 @@
 	"containers": [
 		{
 			"members": [
-				"part_wallEmitter",
-				"part_wall"
+				"part_wall",
+				"part_wallEmitter"
 			],
 			"selectMode": "normal"
 		},
