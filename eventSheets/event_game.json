@@ -14,12 +14,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "sys_Audio",
-					"sid": 570940124479213,
+					"sid": 768057541972717,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "var_songName.SongName",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-10",
 						"tag-optional": "\"BGM\""
 					}
 				}
@@ -125,11 +125,11 @@
 				{
 					"id": "play",
 					"objectClass": "sys_Audio",
-					"sid": 958482804621659,
+					"sid": 413053570861111,
 					"parameters": {
 						"audio-file": "jumpy_jump",
 						"loop": "not-looping",
-						"volume": "-10",
+						"volume": "-20",
 						"tag-optional": "\"\""
 					}
 				}
