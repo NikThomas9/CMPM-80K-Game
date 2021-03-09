@@ -4,7 +4,37 @@
 		{
 			"name": "Layer 0",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "cutsceneBG2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 450,
+						"y": 250,
+						"width": 600,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 797521379364621,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -34,39 +64,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "text_c1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 107,
-					"instanceVariables": {
-						"s": "1",
-						"textString": 18,
-						"textNumber": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 459,
-						"y": 549,
-						"width": 600,
-						"height": 450,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "spr_blob",
 					"properties": {
 						"initially-visible": true,
@@ -79,8 +76,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 449,
-						"y": 256,
+						"x": 450,
+						"y": 250,
 						"width": 169.36381369155816,
 						"height": 172.6846727835495,
 						"originX": 0.5,
@@ -114,6 +111,39 @@
 						"y": 596,
 						"width": 250,
 						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "text_cutscene",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "2_1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {
+						"textNumber": 2,
+						"maxText": 9,
+						"cutsceneNumber": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 450,
+						"y": 500,
+						"width": 600,
+						"height": 450,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

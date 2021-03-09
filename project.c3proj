@@ -127,7 +127,7 @@
 			"obj_pog",
 			"spr_bashy",
 			"tile_Bashy",
-			"text_c1",
+			"text_cutscene",
 			"tile_JumpBG",
 			"coll_LevelEnd",
 			"text_win",
@@ -152,7 +152,10 @@
 			"coll_punchHitbox",
 			"text_tutorialprompt4",
 			"text_tutorialprompt3",
-			"text_tutorialPrompt2"
+			"text_tutorialPrompt2",
+			"cutsceneBG1",
+			"cutsceneBG2",
+			"cutsceneBG3"
 		],
 		"subfolders": []
 	},

@@ -25,16 +25,16 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "text_c1",
-					"sid": 830630383108964,
+					"objectClass": "text_cutscene",
+					"sid": 164136342475814,
 					"parameters": {
-						"animation": "str(Self.textNumber)",
+						"animation": "str(Self.cutsceneNumber)&\"_\"&str(Self.textNumber)",
 						"from": "beginning"
 					}
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "text_c1",
+					"objectClass": "text_cutscene",
 					"sid": 293770927687025,
 					"parameters": {
 						"instance-variable": "textNumber",
@@ -65,10 +65,10 @@
 				},
 				{
 					"id": "is-animation-playing",
-					"objectClass": "text_c1",
-					"sid": 784789513892946,
+					"objectClass": "text_cutscene",
+					"sid": 106175497843260,
 					"parameters": {
-						"animation": "\"5\""
+						"animation": "str(Self.cutsceneNumber)&\"_\"&str(Self.maxText)"
 					}
 				},
 				{

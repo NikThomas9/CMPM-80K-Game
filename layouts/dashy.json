@@ -235,6 +235,69 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "tile_Words",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 58,
+					"instanceVariables": {
+						"StartingPosition": 0,
+						"MaxFloatDistance": -30
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 62,
+							"height": 93,
+							"max-width": 74,
+							"max-height": 144,
+							"data": "1317x0,35,143x0,9,143x0,33,143x0,3,143x0,1,143x0,14,143x0,14,143x0,15,143x0,20,143x0,34,284x0,35,143x0,5,143x0,19,143x0,3,143x0,1,143x0,16,143x0,5,143x0,27,143x0,34,748x0,35,143x0,1,143x0,13,143x0,33,143x0,9,143x0,34,290x0,35,143x0,14,143x0,15,143x0,20,143x0,34,290x0,35,143x0,5,143x0,14,143x0,15,143x0,21,143x0,7,143x0,8,143x0,29,143x0,34,2826x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1999,
+						"height": 3003,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 259881086005965,

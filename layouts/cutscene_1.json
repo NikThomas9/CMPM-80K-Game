@@ -4,7 +4,37 @@
 		{
 			"name": "Layer 0",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "cutsceneBG1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 450,
+						"y": 250,
+						"width": 600,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 563262282458738,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -34,24 +64,24 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "text_c1",
+					"type": "text_cutscene",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "1",
+						"initial-animation": "1_1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 29,
 					"instanceVariables": {
-						"s": "1",
-						"textString": 18,
-						"textNumber": 2
+						"textNumber": 2,
+						"maxText": 11,
+						"cutsceneNumber": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 459,
-						"y": 549,
+						"x": 450,
+						"y": 500,
 						"width": 600,
 						"height": 450,
 						"originX": 0.5,
@@ -79,8 +109,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 449,
-						"y": 256,
+						"x": 450,
+						"y": 250,
 						"width": 169.36381369155816,
 						"height": 172.6846727835495,
 						"originX": 0.5,

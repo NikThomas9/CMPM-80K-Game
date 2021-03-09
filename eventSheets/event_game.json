@@ -1718,6 +1718,11 @@
 						"tag": "\"WallJumpDelay\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 854875406381790
 				}
 			],
 			"actions": [
@@ -1744,10 +1749,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "spr_dashy",
-					"sid": 886190478140476,
+					"sid": 473031007901282,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "0.1",
+						"duration": "0.15",
 						"type": "once",
 						"tag": "\"WallJumpDelay\""
 					}
@@ -1855,6 +1860,12 @@
 						"tag": "\"WallJumpDelay\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 805614186192222,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1881,10 +1892,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "spr_dashy",
-					"sid": 558482402612644,
+					"sid": 181639842167827,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "0.1",
+						"duration": "0.15",
 						"type": "once",
 						"tag": "\"WallJumpDelay\""
 					}
@@ -1892,10 +1903,10 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "spr_dashy",
-					"sid": 790422336260333,
+					"sid": 318355399582492,
 					"behaviorType": "Platform",
 					"parameters": {
-						"vector-x": "-(Self.maxWallJumpSpeed)"
+						"vector-x": "-Self.maxWallJumpSpeed"
 					}
 				},
 				{
