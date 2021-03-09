@@ -5,9 +5,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "sys_Keyboard",
-					"sid": 204957637870773,
+					"sid": 982710268334975,
 					"parameters": {
 						"key": 32
 					}

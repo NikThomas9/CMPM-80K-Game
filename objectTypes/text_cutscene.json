@@ -886,7 +886,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 664864,
+								"imageSpriteId": 7360830,
 								"collisionPoly": {
 									"points": [
 										0.34,
@@ -1348,6 +1348,55 @@
 				],
 				"subfolders": [],
 				"name": "cutscene 3"
+			},
+			{
+				"items": [
+					{
+						"frames": [
+							{
+								"width": 400,
+								"height": 300,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 6730944,
+								"collisionPoly": {
+									"points": [
+										0.34,
+										0.4533333333333333,
+										0.5,
+										0.44666666666666666,
+										0.6625,
+										0.44666666666666666,
+										0.9025,
+										0.5,
+										0.7225,
+										0.63,
+										0.5,
+										0.5033333333333333,
+										0.265,
+										0.6433333333333333,
+										0.1,
+										0.5
+									]
+								},
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 436513264864266,
+						"name": "4_1",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					}
+				],
+				"subfolders": [],
+				"name": "cutscene 4"
 			}
 		]
 	}

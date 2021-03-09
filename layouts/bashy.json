@@ -308,8 +308,8 @@
 						}
 					},
 					"world": {
-						"x": 151,
-						"y": 2525,
+						"x": 149,
+						"y": 2529,
 						"width": 124,
 						"height": 122,
 						"originX": 0.5,
@@ -1495,6 +1495,80 @@
 						"y": 2432,
 						"width": 167.41746403313232,
 						"height": 690,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coll_win",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 86,
+					"instanceVariables": {
+						"reachedGoal": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 8915,
+						"y": 3301,
+						"width": 124,
+						"height": 122,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "fadeOut",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 87,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 3,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 2085,
+						"y": 8153,
+						"width": 10000,
+						"height": 10000,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

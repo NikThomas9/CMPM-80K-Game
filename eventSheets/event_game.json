@@ -50,6 +50,15 @@
 					"id": "is-visible",
 					"objectClass": "spr_jumpy",
 					"sid": 207347857865813
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 940787168379206,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -86,6 +95,15 @@
 					"sid": 153153485504426,
 					"parameters": {
 						"key": 37
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 101460010281076,
+					"parameters": {
+						"instance-variable": "reachedGoal"
 					},
 					"isInverted": true
 				}
@@ -132,6 +150,15 @@
 						"volume": "-20",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 785100759996316,
+					"parameters": {
+						"x": "spr_jumpy.X",
+						"y": "spr_jumpy.Y"
+					}
 				}
 			],
 			"sid": 962033701574730
@@ -170,6 +197,15 @@
 					"parameters": {
 						"animation": "\"Walk\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 373008750099915,
+					"parameters": {
+						"x": "spr_jumpy.X",
+						"y": "spr_jumpy.Y"
 					}
 				}
 			],
@@ -331,6 +367,15 @@
 						"animation": "\"Fall\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 583934412662437,
+					"parameters": {
+						"x": "spr_jumpy.X",
+						"y": "spr_jumpy.Y"
+					}
 				}
 			],
 			"sid": 581593271119568
@@ -412,6 +457,15 @@
 					"id": "is-visible",
 					"objectClass": "spr_bashy",
 					"sid": 865718113499953
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 289776112463860,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -468,6 +522,15 @@
 					"id": "is-visible",
 					"objectClass": "spr_bashy",
 					"sid": 505986702504589
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 735902632707520,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -539,6 +602,15 @@
 					"parameters": {
 						"instance-variable": "punchArmor",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 660474392720103,
+					"parameters": {
+						"x": "spr_bashy.X",
+						"y": "spr_bashy.Y"
 					}
 				}
 			],
@@ -659,6 +731,15 @@
 						"instance-variable": "punchArmor",
 						"value": "false"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 812851723160959,
+					"parameters": {
+						"x": "spr_bashy.X",
+						"y": "spr_bashy.Y"
+					}
 				}
 			],
 			"sid": 522389965832238
@@ -684,6 +765,15 @@
 					"objectClass": "spr_bashy",
 					"sid": 169341152703405,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 428923992945717,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1055,6 +1145,15 @@
 					"id": "is-visible",
 					"objectClass": "spr_bashy",
 					"sid": 960015331643516
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 207427864784051,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1229,6 +1328,15 @@
 						"animation": "\"Fall\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 999125154211107,
+					"parameters": {
+						"x": "spr_bashy.X",
+						"y": "spr_bashy.Y"
+					}
 				}
 			],
 			"sid": 604132280972497
@@ -1304,6 +1412,15 @@
 					"objectClass": "spr_dashy",
 					"sid": 129749738657613,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 437027632961768,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1369,6 +1486,15 @@
 					"sid": 365067821944795,
 					"parameters": {
 						"key": 37
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 669953050171840,
+					"parameters": {
+						"instance-variable": "reachedGoal"
 					},
 					"isInverted": true
 				}
@@ -1438,6 +1564,15 @@
 						"instance-variable": "usedDash",
 						"value": "false"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 446738912710894,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
+					}
 				}
 			],
 			"sid": 934577728648747
@@ -1472,6 +1607,15 @@
 						"volume": "-10",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 149334881350345,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
+					}
 				}
 			],
 			"sid": 501901485718272
@@ -1494,6 +1638,15 @@
 					"parameters": {
 						"animation": "\"Fall\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 430473507748658,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
 					}
 				}
 			],
@@ -1602,6 +1755,15 @@
 						"instance-variable": "usedDash"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 925167354438359,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1634,6 +1796,15 @@
 						"loop": "not-looping",
 						"volume": "-5",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 563580863277161,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
 					}
 				}
 			],
@@ -1680,6 +1851,15 @@
 						"comparison": 3,
 						"speed": "1500"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 444969951321866,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1736,6 +1916,15 @@
 					"parameters": {
 						"max-speed": "10000"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 400302837441068,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
+					}
 				}
 			],
 			"sid": 583722499117643
@@ -1781,6 +1970,15 @@
 					"id": "is-mirrored",
 					"objectClass": "spr_dashy",
 					"sid": 854875406381790
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 760041027635381,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1878,6 +2076,15 @@
 						"animation": "\"Jump\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 554485548299798,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
+					}
 				}
 			],
 			"sid": 811202220526472
@@ -1923,6 +2130,15 @@
 					"id": "is-mirrored",
 					"objectClass": "spr_dashy",
 					"sid": 805614186192222,
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "coll_win",
+					"sid": 381998087235089,
+					"parameters": {
+						"instance-variable": "reachedGoal"
+					},
 					"isInverted": true
 				}
 			],
@@ -2021,132 +2237,18 @@
 						"animation": "\"Jump\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_win",
+					"sid": 518760461051832,
+					"parameters": {
+						"x": "spr_dashy.X",
+						"y": "spr_dashy.Y"
+					}
 				}
 			],
 			"sid": 514436381099273
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "spr_jumpy",
-					"sid": 472524431865320,
-					"parameters": {
-						"object": "coll_LevelEnd"
-					}
-				},
-				{
-					"id": "is-tag-playing",
-					"objectClass": "sys_Audio",
-					"sid": 882254478636639,
-					"parameters": {
-						"tag": "\"win\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 468729698896590,
-					"parameters": {
-						"layout": "var_nextLevel.LevelName"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "sys_Audio",
-					"sid": 916946054897885,
-					"parameters": {
-						"tag": "\"BGM\""
-					}
-				}
-			],
-			"sid": 165403778805504
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "spr_bashy",
-					"sid": 727998787562837,
-					"parameters": {
-						"object": "coll_LevelEnd"
-					}
-				},
-				{
-					"id": "is-tag-playing",
-					"objectClass": "sys_Audio",
-					"sid": 698183328056533,
-					"parameters": {
-						"tag": "\"win\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 909898728363448,
-					"parameters": {
-						"layout": "var_nextLevel.LevelName"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "sys_Audio",
-					"sid": 566611030942025,
-					"parameters": {
-						"tag": "\"BGM\""
-					}
-				}
-			],
-			"sid": 341675695813667
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "spr_dashy",
-					"sid": 509763661283965,
-					"parameters": {
-						"object": "coll_LevelEnd"
-					}
-				},
-				{
-					"id": "is-tag-playing",
-					"objectClass": "sys_Audio",
-					"sid": 260307005921054,
-					"parameters": {
-						"tag": "\"win\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 351263204021491,
-					"parameters": {
-						"layout": "var_nextLevel.LevelName"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "sys_Audio",
-					"sid": 757411290171127,
-					"parameters": {
-						"tag": "\"BGM\""
-					}
-				}
-			],
-			"sid": 167105545911824
 		},
 		{
 			"eventType": "block",
@@ -2247,6 +2349,111 @@
 				}
 			],
 			"sid": 398495330198017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "coll_win",
+					"sid": 996100947891705,
+					"parameters": {
+						"object": "coll_LevelEnd"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "fadeOut",
+					"sid": 959916067073058,
+					"parameters": {
+						"x": "coll_win.X",
+						"y": "coll_win.Y"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "fadeOut",
+					"sid": 513932998548600,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "fadeOut",
+					"sid": 826362265550477,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_jumpy",
+					"sid": 681102067906011,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_bashy",
+					"sid": 706327206070675,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "spr_dashy",
+					"sid": 364573298539210,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "coll_win",
+					"sid": 795873341696003,
+					"parameters": {
+						"instance-variable": "reachedGoal",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 427757942729078
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "fadeOut",
+					"sid": 686923160791969,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 218228969266089,
+					"parameters": {
+						"layout": "var_nextLevel.LevelName"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "sys_Audio",
+					"sid": 321494396599251,
+					"parameters": {
+						"tag": "\"BGM\""
+					}
+				}
+			],
+			"sid": 911337124567167
 		}
 	],
 	"sid": 808825524418463
