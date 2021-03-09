@@ -788,6 +788,17 @@
 						"volume": "-5",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "obj_wall",
+					"sid": 704617689924575,
+					"parameters": {
+						"object": "part_wallEmitter",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
 				}
 			],
 			"sid": 906734105809343
@@ -864,6 +875,25 @@
 					"parameters": {
 						"instance-variable": "punchArmor",
 						"value": "true"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "obj_boulder",
+					"sid": 592757968230168,
+					"parameters": {
+						"object": "part_boulderEmitter",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-spray-cone",
+					"objectClass": "part_boulder",
+					"sid": 921147805622354,
+					"parameters": {
+						"spray-cone": "30"
 					}
 				}
 			],
@@ -1124,6 +1154,25 @@
 					"parameters": {
 						"animation": "\"Damaged\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "obj_boulder",
+					"sid": 309114284776828,
+					"parameters": {
+						"object": "part_boulderEmitter",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-spray-cone",
+					"objectClass": "part_boulder",
+					"sid": 281185655319778,
+					"parameters": {
+						"spray-cone": "360"
 					}
 				}
 			],

@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -156,12 +164,31 @@
 			"cutsceneBG2",
 			"cutsceneBG3",
 			"dashy_skyboxtest",
-			"Tilemap"
+			"Tilemap",
+			"part_wall",
+			"part_wallEmitter",
+			"part_boulder",
+			"part_boulderEmitter"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"part_wallEmitter",
+				"part_wall"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"part_boulder",
+				"part_boulderEmitter"
+			],
+			"selectMode": "normal"
+		}
+	],
 	"families": {
 		"items": [],
 		"subfolders": []
