@@ -996,6 +996,15 @@
 					"parameters": {
 						"tag": "\"Timer\""
 					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "spr_bashy",
+					"sid": 196595408431713,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "obj_sadMask.X - 75"
+					}
 				}
 			],
 			"actions": [
