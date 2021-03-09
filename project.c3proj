@@ -144,7 +144,6 @@
 			"var_nextLevel",
 			"var_songName",
 			"coll_playerHitbox",
-			"tile_DashyBG",
 			"tile_Dashy",
 			"spr_dashy",
 			"tile_Rain",
@@ -155,7 +154,9 @@
 			"text_tutorialPrompt2",
 			"cutsceneBG1",
 			"cutsceneBG2",
-			"cutsceneBG3"
+			"cutsceneBG3",
+			"dashy_skyboxtest",
+			"Tilemap"
 		],
 		"subfolders": []
 	},
