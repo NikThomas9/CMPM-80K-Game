@@ -2068,23 +2068,6 @@
 					}
 				},
 				{
-					"id": "set-mirrored",
-					"objectClass": "spr_dashy",
-					"sid": 727926828588292,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "spr_dashy",
-					"sid": 662642886111806,
-					"parameters": {
-						"instance-variable": "isMirrored",
-						"value": "1"
-					}
-				},
-				{
 					"id": "play",
 					"objectClass": "sys_Audio",
 					"sid": 279663338506394,
@@ -2111,6 +2094,32 @@
 					"parameters": {
 						"x": "spr_dashy.X",
 						"y": "spr_dashy.Y"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 169266716064002,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "2700"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 727926828588292,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_dashy",
+					"sid": 662642886111806,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "1"
 					}
 				}
 			],
@@ -2229,23 +2238,6 @@
 					}
 				},
 				{
-					"id": "set-mirrored",
-					"objectClass": "spr_dashy",
-					"sid": 528975771711311,
-					"parameters": {
-						"state": "mirrored"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "spr_dashy",
-					"sid": 313624998751214,
-					"parameters": {
-						"instance-variable": "isMirrored",
-						"value": "-1"
-					}
-				},
-				{
 					"id": "play",
 					"objectClass": "sys_Audio",
 					"sid": 111717301316772,
@@ -2272,6 +2264,32 @@
 					"parameters": {
 						"x": "spr_dashy.X",
 						"y": "spr_dashy.Y"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 490263427784438,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "2700"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "spr_dashy",
+					"sid": 528975771711311,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "spr_dashy",
+					"sid": 313624998751214,
+					"parameters": {
+						"instance-variable": "isMirrored",
+						"value": "-1"
 					}
 				}
 			],
@@ -2481,6 +2499,102 @@
 				}
 			],
 			"sid": 911337124567167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 105128811628517,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "right"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 995473246277031,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "is-falling",
+					"objectClass": "spr_dashy",
+					"sid": 799038786751660,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 262430762617361,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "300"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 529619059844745,
+					"parameters": {
+						"animation": "\"WallSlide\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 484287719963267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-by-wall",
+					"objectClass": "spr_dashy",
+					"sid": 323941139019781,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "left"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 916434585593528,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "is-falling",
+					"objectClass": "spr_dashy",
+					"sid": 938426887113064,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-gravity",
+					"objectClass": "spr_dashy",
+					"sid": 421232561754162,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "300"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "spr_dashy",
+					"sid": 997975648928321,
+					"parameters": {
+						"animation": "\"WallSlide\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 158430811287553
 		}
 	],
 	"sid": 808825524418463
