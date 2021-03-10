@@ -48,38 +48,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 453,
-						"y": 333,
+						"y": 194,
 						"width": 600,
 						"height": 450,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "text_credit",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 66,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 199,
-						"y": 646,
-						"width": 372,
-						"height": 249,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -124,5 +95,5 @@
 	"width": 1800,
 	"height": 1400,
 	"unboundedScrolling": false,
-	"eventSheet": "event_Win"
+	"eventSheet": null
 }

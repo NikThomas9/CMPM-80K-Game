@@ -1224,9 +1224,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "coll_punchHitbox",
-					"sid": 101723891144356,
+					"sid": 858511731531704,
 					"parameters": {
-						"x": "spr_bashy.X+50",
+						"x": "spr_bashy.X+ (spr_bashy.isMirrored * 50)",
 						"y": "spr_bashy.Y"
 					}
 				}

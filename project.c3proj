@@ -47,6 +47,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -174,7 +190,10 @@
 			"part_maskEmitter",
 			"coll_punchHitbox",
 			"cutsceneBG4",
-			"title_names"
+			"title_names",
+			"Browser",
+			"Mouse",
+			"text_titleSources"
 		],
 		"subfolders": []
 	},
@@ -224,10 +243,8 @@
 	"eventSheets": {
 		"items": [
 			"event_Title",
-			"event_Win",
 			"event_Game",
-			"event_Cutscene",
-			"TODO"
+			"event_Cutscene"
 		],
 		"subfolders": []
 	},

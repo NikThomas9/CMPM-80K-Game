@@ -56,6 +56,80 @@
 				}
 			],
 			"sid": 168472383345243
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 459448888140723,
+					"parameters": {
+						"object": "text_titleSources"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "text_titleSources",
+					"sid": 807817126305836,
+					"parameters": {
+						"animation": "\"hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 868281754305237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 958716353693100
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "text_titleSources",
+					"sid": 485164570015541,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 183988451769273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 884408199533801,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "text_titleSources"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 155526761838301,
+					"parameters": {
+						"url": "\"https://docs.google.com/document/d/1UbwdLzb_t6KPq1WK4HwYivj3Gf0p84nJm5vVJWq2dOE/edit?usp=sharing\"",
+						"tag": "\"Credits\""
+					}
+				}
+			],
+			"sid": 495761549276778
 		}
 	],
 	"sid": 316712472935304
