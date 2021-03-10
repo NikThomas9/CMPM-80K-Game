@@ -413,9 +413,9 @@
 				{
 					"id": "play",
 					"objectClass": "sys_Audio",
-					"sid": 395675315312500,
+					"sid": 817652713839986,
 					"parameters": {
-						"audio-file": "win",
+						"audio-file": "secret",
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"secret\""

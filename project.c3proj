@@ -319,6 +319,11 @@
 					"name": "dashy_walljump.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 970075492347561
+				},
+				{
+					"name": "secret.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 124979707398880
 				}
 			],
 			"subfolders": []
