@@ -824,6 +824,11 @@
 						"animation": "\"Default\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "coll_punchHitbox",
+					"sid": 930430338865031
 				}
 			],
 			"sid": 614372193425631
@@ -832,9 +837,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "spr_bashy",
-					"sid": 652895164169715,
+					"id": "is-overlapping-another-object",
+					"objectClass": "coll_punchHitbox",
+					"sid": 355388221082925,
 					"parameters": {
 						"object": "obj_wall"
 					}
@@ -897,9 +902,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "spr_bashy",
-					"sid": 228679244620803,
+					"id": "is-overlapping-another-object",
+					"objectClass": "coll_punchHitbox",
+					"sid": 330019472193545,
 					"parameters": {
 						"object": "obj_boulder"
 					}
@@ -993,9 +998,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "spr_bashy",
-					"sid": 486445929824867,
+					"id": "is-overlapping-another-object",
+					"objectClass": "coll_punchHitbox",
+					"sid": 305531928854932,
 					"parameters": {
 						"object": "obj_sadMask"
 					}
@@ -1138,10 +1143,10 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 348557636968708,
+					"sid": 205473066117662,
 					"parameters": {
-						"comparison": 0,
-						"number": "3"
+						"comparison": 5,
+						"number": "2"
 					}
 				},
 				{
@@ -1195,6 +1200,26 @@
 						"volume": "-5",
 						"tag-optional": "\"Punch\""
 					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "spr_bashy",
+					"sid": 842493161785935,
+					"parameters": {
+						"object": "coll_punchHitbox",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_punchHitbox",
+					"sid": 101723891144356,
+					"parameters": {
+						"x": "spr_bashy.X+50",
+						"y": "spr_bashy.Y"
+					}
 				}
 			],
 			"sid": 674700368793890
@@ -1203,13 +1228,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-at-offset",
+					"id": "on-collision-with-another-object",
 					"objectClass": "obj_boulder",
-					"sid": 458820146238096,
+					"sid": 421784969551897,
 					"parameters": {
-						"object": "spr_bashy",
-						"offset-x": "10",
-						"offset-y": "0"
+						"object": "spr_bashy"
 					}
 				},
 				{

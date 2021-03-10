@@ -171,7 +171,8 @@
 			"part_dash",
 			"part_run",
 			"part_wall",
-			"part_maskEmitter"
+			"part_maskEmitter",
+			"coll_punchHitbox"
 		],
 		"subfolders": []
 	},
