@@ -366,49 +366,6 @@
 					}
 				},
 				{
-					"type": "fadeOut",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 2",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 90,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 3,
-								"wait-time": 0,
-								"fade-out-time": 0,
-								"destroy": true,
-								"enabled": false,
-								"live-preview": false
-							}
-						},
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 6759,
-						"y": 13236,
-						"width": 10000,
-						"height": 10000,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "coll_LevelEnd",
 					"properties": {
 						"initially-visible": true,
@@ -687,6 +644,49 @@
 						"y": 7757,
 						"width": 128,
 						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "fadeOut",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 90,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 3,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 6759,
+						"y": 13236,
+						"width": 10000,
+						"height": 10000,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

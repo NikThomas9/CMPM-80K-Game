@@ -683,6 +683,15 @@
 						"instance-variable": "punchArmor",
 						"value": "false"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_player",
+					"sid": 397894931800580,
+					"parameters": {
+						"x": "spr_bashy.X",
+						"y": "spr_bashy.Y"
+					}
 				}
 			],
 			"sid": 738961029508473
@@ -1128,9 +1137,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "obj_boulder",
-					"sid": 883991900326438,
+					"sid": 153626346847121,
 					"parameters": {
-						"animation": "\"1\"",
+						"animation": "str(int(random(1,5)))",
 						"from": "beginning"
 					}
 				}
@@ -1324,6 +1333,15 @@
 					"sid": 281185655319778,
 					"parameters": {
 						"spray-cone": "360"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "coll_player",
+					"sid": 165334394456122,
+					"parameters": {
+						"x": "spr_bashy.X",
+						"y": "spr_bashy.Y"
 					}
 				}
 			],
