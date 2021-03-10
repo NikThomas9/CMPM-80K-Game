@@ -143,11 +143,11 @@
 				{
 					"id": "play",
 					"objectClass": "sys_Audio",
-					"sid": 413053570861111,
+					"sid": 218021331578978,
 					"parameters": {
 						"audio-file": "jumpy_jump",
 						"loop": "not-looping",
-						"volume": "-20",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				},

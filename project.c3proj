@@ -172,7 +172,9 @@
 			"part_run",
 			"part_wall",
 			"part_maskEmitter",
-			"coll_punchHitbox"
+			"coll_punchHitbox",
+			"cutsceneBG4",
+			"title_names"
 		],
 		"subfolders": []
 	},
