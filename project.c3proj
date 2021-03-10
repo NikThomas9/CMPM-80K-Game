@@ -160,7 +160,6 @@
 			"cutsceneBG1",
 			"cutsceneBG2",
 			"cutsceneBG3",
-			"dashy_skyboxtest",
 			"tile_DashyBG",
 			"part_wall",
 			"part_wallEmitter",
@@ -168,7 +167,9 @@
 			"part_boulderEmitter",
 			"tile_BashyBG",
 			"fadeOut",
-			"coll_win"
+			"coll_player",
+			"part_dash",
+			"part_run"
 		],
 		"subfolders": []
 	},

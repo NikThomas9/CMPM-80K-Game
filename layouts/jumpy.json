@@ -1487,7 +1487,7 @@
 					}
 				},
 				{
-					"type": "coll_win",
+					"type": "coll_player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
