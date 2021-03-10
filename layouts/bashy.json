@@ -261,70 +261,6 @@
 					}
 				},
 				{
-					"type": "spr_bashy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 27,
-					"instanceVariables": {
-						"isMirrored": 1,
-						"punchDistance": 25,
-						"punchArmor": false
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 450,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 149,
-						"y": 2529,
-						"width": 124,
-						"height": 122,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "obj_wall",
 					"properties": {
 						"initially-visible": true,
@@ -580,8 +516,8 @@
 						}
 					},
 					"world": {
-						"x": 9451,
-						"y": 2424,
+						"x": 9168,
+						"y": 2448,
 						"width": 155.80399035286902,
 						"height": 147.92312602436675,
 						"originX": 0.0625,
@@ -1333,11 +1269,11 @@
 					},
 					"ownData": {
 						"tilemapData": {
-							"width": 306,
-							"height": 98,
-							"max-width": 339,
-							"max-height": 127,
-							"data": "1090x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,127x0,5,126x0,5,126x0,5,126x0,5,126x0,5,127x0,5,127x0,5,1015x0,5,125x0,2x5,125x0,5,126x0,5,126x0,5,126x0,5,126x0,2x5,126x0,5,126x0,5,1143x0,2x5,124x0,2x5,125x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,12311x0,5,126x0,5,126x0,5,125x0,2x5,125x0,5,126x0,2x5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,2920x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,126x0,5,15423x0"
+							"width": 286,
+							"height": 101,
+							"max-width": 357,
+							"max-height": 149,
+							"data": "1266x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,149x0,5,148x0,5,148x0,5,148x0,5,148x0,5,149x0,5,149x0,5,1191x0,5,147x0,2x5,147x0,5,148x0,5,148x0,5,148x0,5,148x0,2x5,148x0,5,148x0,5,1341x0,2x5,146x0,2x5,147x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,14445x0,5,148x0,5,148x0,5,147x0,2x5,147x0,5,148x0,2x5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,3426x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,148x0,5,20789x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -1349,8 +1285,8 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 9800,
-						"height": 3141,
+						"width": 9183,
+						"height": 3233,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1569,6 +1505,128 @@
 						"y": 8153,
 						"width": 10000,
 						"height": 10000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spr_easterEgg",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Goost",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 98,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 7372,
+						"y": 2305,
+						"width": 88,
+						"height": 88,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coll_Secret",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 100,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 7373,
+						"y": 2291.5,
+						"width": 105,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spr_bashy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"instanceVariables": {
+						"isMirrored": 1,
+						"punchDistance": 25,
+						"punchArmor": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 450,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 145,
+						"y": 2530,
+						"width": 124,
+						"height": 122,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

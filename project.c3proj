@@ -144,7 +144,7 @@
 			"text_credit",
 			"obj_wall",
 			"obj_boulder",
-			"spr_virus",
+			"spr_easterEgg",
 			"coll_Secret",
 			"obj_sadMask",
 			"coll_boulderDestroyer",

@@ -288,10 +288,10 @@
 					}
 				},
 				{
-					"type": "spr_virus",
+					"type": "spr_easterEgg",
 					"properties": {
 						"initially-visible": false,
-						"initial-animation": "Default",
+						"initial-animation": "Virus",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

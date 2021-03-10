@@ -385,8 +385,8 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "spr_jumpy",
-					"sid": 616300018690164,
+					"objectClass": "coll_player",
+					"sid": 891231282086769,
 					"parameters": {
 						"object": "coll_Secret"
 					}
@@ -404,7 +404,7 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "spr_virus",
+					"objectClass": "spr_easterEgg",
 					"sid": 188819765098523,
 					"parameters": {
 						"visibility": "visible"

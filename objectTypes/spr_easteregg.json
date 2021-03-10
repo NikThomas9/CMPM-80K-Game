@@ -1,5 +1,5 @@
 {
-	"name": "spr_virus",
+	"name": "spr_easterEgg",
 	"plugin-id": "Sprite",
 	"sid": 458133203025319,
 	"isGlobal": false,
@@ -140,7 +140,93 @@
 					}
 				],
 				"sid": 682948335883742,
-				"name": "Default",
+				"name": "Virus",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 114,
+						"height": 114,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4511968,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.1875,
+								0.734375,
+								0.25,
+								0.828125,
+								0.5,
+								0.734375,
+								0.734375,
+								0.5,
+								0.859375,
+								0.21875,
+								0.765625,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 182485791833699,
+				"name": "Goost",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 160,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7572310,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.1875,
+								0.734375,
+								0.25,
+								0.828125,
+								0.5,
+								0.734375,
+								0.734375,
+								0.5,
+								0.859375,
+								0.21875,
+								0.765625,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 226857700544998,
+				"name": "Panda",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
