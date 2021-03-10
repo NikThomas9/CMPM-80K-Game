@@ -386,9 +386,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "coll_player",
-					"sid": 891231282086769,
+					"sid": 121264822225259,
 					"parameters": {
-						"object": "coll_Secret"
+						"object": "spr_easterEgg"
 					}
 				},
 				{

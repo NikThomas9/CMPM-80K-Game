@@ -483,10 +483,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 8655.5,
-						"y": 574.5,
-						"width": 396,
-						"height": 376,
+						"x": 8605,
+						"y": 621.5,
+						"width": 557,
+						"height": 648,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1064,6 +1064,64 @@
 						"y": 13236,
 						"width": 10000,
 						"height": 10000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coll_Secret",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 163,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 475.5,
+						"y": 5812,
+						"width": 294,
+						"height": 377,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spr_easterEgg",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Mircelo",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 164,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 513,
+						"y": 5791,
+						"width": 126.86279375000001,
+						"height": 132.26898196010828,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

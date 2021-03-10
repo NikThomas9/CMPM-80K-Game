@@ -296,6 +296,81 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 111,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6329928,
+						"collisionPoly": {
+							"points": [
+								0.22538860103626943,
+								0.22894736842105262,
+								0.5,
+								0.1,
+								0.7020725388601037,
+								0.3,
+								0.8471502590673575,
+								0.5,
+								0.8238341968911918,
+								0.8210526315789474,
+								0.5,
+								0.7763157894736842,
+								0.2927461139896373,
+								0.7,
+								0.18911917098445596,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 3
+					},
+					{
+						"width": 100,
+						"height": 111,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2159959,
+						"collisionPoly": {
+							"points": [
+								0.3583959899749373,
+								0.32207207207207206,
+								0.5,
+								0.14864864864864866,
+								0.7794486215538847,
+								0.19594594594594594,
+								0.8822055137844611,
+								0.5,
+								0.7794486215538847,
+								0.8018018018018018,
+								0.5,
+								0.8513513513513513,
+								0.20300751879699247,
+								0.8153153153153153,
+								0.2907268170426065,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 3
+					}
+				],
+				"sid": 249444733967164,
+				"name": "Mircelo",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []
