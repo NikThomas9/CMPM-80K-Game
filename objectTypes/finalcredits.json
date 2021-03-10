@@ -1,7 +1,7 @@
 {
-	"name": "text_win",
+	"name": "finalCredits",
 	"plugin-id": "Sprite",
-	"sid": 760574174685166,
+	"sid": 619552636023880,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -12,18 +12,18 @@
 				"frames": [
 					{
 						"width": 600,
-						"height": 450,
+						"height": 600,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 946253,
+						"imageSpriteId": 9606604,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 985559550372039,
+				"sid": 461432379291953,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

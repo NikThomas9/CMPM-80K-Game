@@ -18,10 +18,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -404,
-						"y": 907,
-						"width": 600,
-						"height": 450,
+						"x": 470,
+						"y": 498,
+						"width": 496.42723535277554,
+						"height": 372.32042651458164,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -35,22 +35,117 @@
 					}
 				},
 				{
-					"type": "text_win",
+					"type": "spr_blob",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 99,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 208,
+						"y": 611,
+						"width": 112.63733237712067,
+						"height": 114.84590759983013,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "text_cutscene",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "5_1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 64,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"textNumber": 1,
+						"maxText": 1,
+						"cutsceneNumber": 5
+					},
 					"behaviors": {},
 					"world": {
-						"x": 453,
-						"y": 194,
-						"width": 600,
-						"height": 450,
+						"x": 462,
+						"y": 266,
+						"width": 695.9971264308496,
+						"height": 695.9971264308496,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "var_songName",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 157,
+					"instanceVariables": {
+						"SongName": "\"mute\""
+					},
+					"behaviors": {},
+					"world": {
+						"x": -190,
+						"y": 435,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "var_nextLevel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 158,
+					"instanceVariables": {
+						"LevelName": "Title Screen"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1052,
+						"y": 457,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -95,5 +190,5 @@
 	"width": 1800,
 	"height": 1400,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "event_Cutscene"
 }

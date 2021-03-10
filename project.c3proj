@@ -193,7 +193,8 @@
 			"title_names",
 			"Browser",
 			"Mouse",
-			"text_titleSources"
+			"text_titleSources",
+			"finalCredits"
 		],
 		"subfolders": []
 	},
@@ -261,11 +262,6 @@
 					"sid": 844639456814912
 				},
 				{
-					"name": "win.mp3",
-					"type": "audio/mpeg",
-					"sid": 924694894216336
-				},
-				{
 					"name": "Track 1.mp3",
 					"type": "audio/mpeg",
 					"sid": 850175734266452
@@ -324,6 +320,11 @@
 					"name": "secret.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 124979707398880
+				},
+				{
+					"name": "mute.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 622561790125065
 				}
 			],
 			"subfolders": []

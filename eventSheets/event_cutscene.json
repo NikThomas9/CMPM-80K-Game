@@ -120,11 +120,12 @@
 			],
 			"actions": [
 				{
-					"id": "play",
+					"id": "play-by-name",
 					"objectClass": "sys_Audio",
-					"sid": 886061576381302,
+					"sid": 997642732779370,
 					"parameters": {
-						"audio-file": "CutsceneBGM",
+						"folder": "sounds",
+						"audio-file-name": "str(var_songName.SongName)",
 						"loop": "looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
