@@ -1047,6 +1047,17 @@
 					"parameters": {
 						"tag": "\"Punch\""
 					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "obj_sadMask",
+					"sid": 205766075725332,
+					"parameters": {
+						"object": "part_maskEmitter",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
 				}
 			],
 			"sid": 880949352806611
@@ -1107,6 +1118,15 @@
 						"layer": "1",
 						"image-point": "10",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "obj_boulder",
+					"sid": 883991900326438,
+					"parameters": {
+						"animation": "\"1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1358,6 +1378,25 @@
 					"id": "destroy",
 					"objectClass": "obj_boulder",
 					"sid": 873635943460013
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "obj_boulder",
+					"sid": 645096241207087,
+					"parameters": {
+						"object": "part_boulderEmitter",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-spray-cone",
+					"objectClass": "part_boulder",
+					"sid": 611838297418019,
+					"parameters": {
+						"spray-cone": "360"
+					}
 				}
 			],
 			"sid": 382413030804758

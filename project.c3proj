@@ -161,7 +161,7 @@
 			"cutsceneBG2",
 			"cutsceneBG3",
 			"tile_DashyBG",
-			"part_wall",
+			"part_mask",
 			"part_wallEmitter",
 			"part_boulder",
 			"part_boulderEmitter",
@@ -169,7 +169,9 @@
 			"fadeOut",
 			"coll_player",
 			"part_dash",
-			"part_run"
+			"part_run",
+			"part_wall",
+			"part_maskEmitter"
 		],
 		"subfolders": []
 	},
@@ -177,15 +179,22 @@
 	"containers": [
 		{
 			"members": [
-				"part_wall",
-				"part_wallEmitter"
+				"part_boulder",
+				"part_boulderEmitter"
 			],
 			"selectMode": "normal"
 		},
 		{
 			"members": [
-				"part_boulder",
-				"part_boulderEmitter"
+				"part_mask",
+				"part_maskEmitter"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"part_wall",
+				"part_wallEmitter"
 			],
 			"selectMode": "normal"
 		}

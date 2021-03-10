@@ -1,7 +1,7 @@
 {
-	"name": "part_wall",
+	"name": "part_mask",
 	"plugin-id": "Particles",
-	"sid": 387686211528433,
+	"sid": 388722014002657,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 5647376,
+		"imageSpriteId": 1968124,
 		"useCollisionPoly": true
 	}
 }

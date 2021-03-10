@@ -53,8 +53,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 19,
-						"y": -255,
+						"x": 0,
+						"y": 0,
 						"width": 1999,
 						"height": 1999,
 						"originX": 0,
