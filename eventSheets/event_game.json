@@ -912,6 +912,17 @@
 						"image-point": "0",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "spr_bashy",
+					"sid": 563568209884544,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "5",
+						"duration": "0.4",
+						"mode": "reducing-magnitude"
+					}
 				}
 			],
 			"sid": 906734105809343
@@ -1008,6 +1019,17 @@
 					"parameters": {
 						"spray-cone": "30"
 					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "spr_bashy",
+					"sid": 143336073227815,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "15",
+						"duration": "0.4",
+						"mode": "reducing-magnitude"
+					}
 				}
 			],
 			"sid": 265770302870331
@@ -1080,6 +1102,17 @@
 						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "spr_bashy",
+					"sid": 389169037655267,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "15",
+						"duration": "0.4",
+						"mode": "reducing-magnitude"
 					}
 				}
 			],
@@ -1351,6 +1384,17 @@
 					"parameters": {
 						"x": "spr_bashy.X",
 						"y": "spr_bashy.Y"
+					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "spr_bashy",
+					"sid": 108880102598516,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "30",
+						"duration": "0.2",
+						"mode": "reducing-magnitude"
 					}
 				}
 			],
@@ -1984,6 +2028,17 @@
 					"sid": 562148294648792,
 					"parameters": {
 						"angle": "90 + (spr_dashy.isMirrored * 90)"
+					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "spr_dashy",
+					"sid": 435990449453182,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "5",
+						"duration": "0.2",
+						"mode": "reducing-magnitude"
 					}
 				}
 			],
@@ -2703,16 +2758,24 @@
 					"objectClass": "spr_dashy",
 					"sid": 799038786751660,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 513368703563827,
+					"parameters": {
+						"key": 39
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-gravity",
 					"objectClass": "spr_dashy",
-					"sid": 262430762617361,
+					"sid": 399100768830288,
 					"behaviorType": "Platform",
 					"parameters": {
-						"gravity": "300"
+						"gravity": "20"
 					}
 				},
 				{
@@ -2760,16 +2823,24 @@
 					"objectClass": "spr_dashy",
 					"sid": 938426887113064,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "sys_Keyboard",
+					"sid": 590661832023341,
+					"parameters": {
+						"key": 37
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-gravity",
 					"objectClass": "spr_dashy",
-					"sid": 421232561754162,
+					"sid": 206765111339837,
 					"behaviorType": "Platform",
 					"parameters": {
-						"gravity": "300"
+						"gravity": "20"
 					}
 				},
 				{
