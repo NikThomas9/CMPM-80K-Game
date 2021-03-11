@@ -976,7 +976,8 @@
 					"instanceVariables": {
 						"isMirrored": 1,
 						"usedDash": false,
-						"maxWallJumpSpeed": 800
+						"maxWallJumpSpeed": 800,
+						"onWall": false
 					},
 					"behaviors": {
 						"Platform": {

@@ -749,6 +749,15 @@
 						"x": "spr_bashy.X",
 						"y": "spr_bashy.Y"
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "spr_bashy",
+					"sid": 518447772579749,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "400"
+					}
 				}
 			],
 			"sid": 522389965832238
@@ -856,9 +865,9 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 116246204919693,
+					"sid": 127004324987890,
 					"parameters": {
-						"comparison": 5,
+						"comparison": 0,
 						"number": "3"
 					}
 				},
@@ -934,10 +943,10 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 255404173045635,
+					"sid": 298174316315161,
 					"parameters": {
-						"comparison": 5,
-						"number": "2"
+						"comparison": 0,
+						"number": "3"
 					}
 				},
 				{
@@ -1017,9 +1026,9 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "spr_bashy",
-					"sid": 838565000275031,
+					"sid": 541045502324106,
 					"parameters": {
-						"comparison": 5,
+						"comparison": 0,
 						"number": "3"
 					}
 				},
@@ -1115,10 +1124,10 @@
 				{
 					"id": "compare-x",
 					"objectClass": "spr_bashy",
-					"sid": 196595408431713,
+					"sid": 306504213473822,
 					"parameters": {
 						"comparison": 3,
-						"x-co-ordinate": "obj_sadMask.X - 75"
+						"x-co-ordinate": "obj_sadMask.X - 150"
 					}
 				}
 			],
@@ -1501,6 +1510,24 @@
 						"instance-variable": "reachedGoal"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_dashy",
+					"sid": 245453791952629,
+					"parameters": {
+						"animation": "\"WallSlide\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "spr_dashy",
+					"sid": 269648852708421,
+					"parameters": {
+						"instance-variable": "onWall"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1575,6 +1602,24 @@
 					"sid": 669953050171840,
 					"parameters": {
 						"instance-variable": "reachedGoal"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "spr_dashy",
+					"sid": 400563493829641,
+					"parameters": {
+						"animation": "\"WallSlide\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "spr_dashy",
+					"sid": 764092169394815,
+					"parameters": {
+						"instance-variable": "onWall"
 					},
 					"isInverted": true
 				}
@@ -1653,6 +1698,15 @@
 						"x": "spr_dashy.X",
 						"y": "spr_dashy.Y"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 989486974677392,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 934577728648747
@@ -1695,6 +1749,15 @@
 					"parameters": {
 						"x": "spr_dashy.X",
 						"y": "spr_dashy.Y"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 929435063269985,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "false"
 					}
 				}
 			],
@@ -1783,6 +1846,15 @@
 					"sid": 379268932931664,
 					"parameters": {
 						"instance-variable": "usedDash",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 983969857743789,
+					"parameters": {
+						"instance-variable": "onWall",
 						"value": "false"
 					}
 				}
@@ -2032,6 +2104,15 @@
 						"x": "spr_dashy.X",
 						"y": "spr_dashy.Y"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 917894001633887,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 583722499117643
@@ -2201,6 +2282,15 @@
 						"instance-variable": "isMirrored",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 243344525107084,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 811202220526472
@@ -2282,10 +2372,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "spr_dashy",
-					"sid": 181639842167827,
+					"sid": 668248862414700,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "0.15",
+						"duration": "0.2",
 						"type": "once",
 						"tag": "\"WallJumpDelay\""
 					}
@@ -2370,6 +2460,15 @@
 					"parameters": {
 						"instance-variable": "isMirrored",
 						"value": "-1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 533560101314604,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "false"
 					}
 				}
 			],
@@ -2624,6 +2723,15 @@
 						"animation": "\"WallSlide\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 608718236999778,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 484287719963267
@@ -2671,6 +2779,15 @@
 					"parameters": {
 						"animation": "\"WallSlide\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 373232961300960,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "true"
 					}
 				}
 			],
