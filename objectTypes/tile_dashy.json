@@ -23,5 +23,160 @@
 		"imageSpriteId": 26571,
 		"useCollisionPoly": true
 	},
-	"tile-collision-polys": {}
+	"tile-collision-polys": {
+		"84": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0.5437500000000006,
+					0.35208333333333375
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"88": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					0.5291666666666675,
+					0.3770833333333338,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"90": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0.5812499999999999,
+					0.3895833333333336
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"94": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					0.5208333333333339,
+					0.35000000000000014,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"97": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0.44374999999999976,
+					0.42916666666666736
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"99": {
+			"collisionPoly": {
+				"points": [
+					0.0020833333333333333,
+					0.99375,
+					0,
+					0,
+					1,
+					0,
+					0.8541666666666672,
+					0.35833333333333384,
+					0.4020833333333333,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"103": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0.616666666666668,
+					1,
+					0.3874999999999997,
+					0.5479166666666672
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"105": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					0.5812500000000002,
+					0.4708333333333333,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"110": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					0.99375,
+					0.385416666666668,
+					0.495833333333333,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"116": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					0.8750000000000004,
+					0.47500000000000003,
+					0.5249999999999998,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		}
+	}
 }
