@@ -1835,6 +1835,15 @@
 						"x": "spr_dashy.X",
 						"y": "spr_dashy.Y"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "spr_dashy",
+					"sid": 522262294878955,
+					"parameters": {
+						"instance-variable": "onWall",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 406999804235584
