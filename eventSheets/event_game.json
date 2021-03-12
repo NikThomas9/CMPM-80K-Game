@@ -2253,12 +2253,20 @@
 					"isInverted": true
 				},
 				{
-					"id": "is-boolean-instance-variable-set",
+					"id": "is-by-wall",
 					"objectClass": "spr_dashy",
-					"sid": 422237023927154,
+					"sid": 342957234752036,
+					"behaviorType": "Platform",
 					"parameters": {
-						"instance-variable": "onWall"
+						"side": "left"
 					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 200990148245729,
+					"behaviorType": "Platform",
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -2424,12 +2432,20 @@
 					"isInverted": true
 				},
 				{
-					"id": "is-boolean-instance-variable-set",
+					"id": "is-by-wall",
 					"objectClass": "spr_dashy",
-					"sid": 885004070981808,
+					"sid": 532989837238084,
+					"behaviorType": "Platform",
 					"parameters": {
-						"instance-variable": "onWall"
+						"side": "right"
 					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "spr_dashy",
+					"sid": 949524497972385,
+					"behaviorType": "Platform",
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -2845,10 +2861,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "coll_WallJumpTop",
-					"sid": 666868994665373,
+					"sid": 449379856790939,
 					"parameters": {
-						"x": "spr_dashy.X+(spr_dashy.isMirrored * 20)",
-						"y": "spr_dashy.Y-5"
+						"x": "spr_dashy.X+(spr_dashy.isMirrored * 15)",
+						"y": "spr_dashy.Y"
 					}
 				},
 				{
@@ -2936,10 +2952,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "coll_WallJumpTop",
-					"sid": 107320034152377,
+					"sid": 699188638587711,
 					"parameters": {
-						"x": "spr_dashy.X+(spr_dashy.isMirrored * 20)",
-						"y": "spr_dashy.Y-5"
+						"x": "spr_dashy.X+(spr_dashy.isMirrored * 15)",
+						"y": "spr_dashy.Y"
 					}
 				},
 				{

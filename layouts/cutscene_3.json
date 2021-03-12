@@ -75,7 +75,7 @@
 					"uid": 110,
 					"instanceVariables": {
 						"textNumber": 2,
-						"maxText": 11,
+						"maxText": 7,
 						"cutsceneNumber": 3
 					},
 					"behaviors": {},
