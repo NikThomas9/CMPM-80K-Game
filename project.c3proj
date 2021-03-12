@@ -194,7 +194,10 @@
 			"Browser",
 			"Mouse",
 			"text_titleSources",
-			"finalCredits"
+			"finalCredits",
+			"coll_WallJumpBot",
+			"coll_WallJumpTop",
+			"coll_coyote"
 		],
 		"subfolders": []
 	},

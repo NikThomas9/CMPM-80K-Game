@@ -1514,10 +1514,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 7360,
-						"y": 2287,
-						"width": 69.88562083862459,
-						"height": 69.88562083862459,
+						"x": 7333,
+						"y": 2277,
+						"width": 102.50042241955809,
+						"height": 102.50042241955809,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1576,7 +1576,7 @@
 					"uid": 103,
 					"instanceVariables": {
 						"StartingPosition": 0,
-						"MaxFloatDistance": -30
+						"MaxFloatDistance": -5
 					},
 					"behaviors": {
 						"Solid": {
